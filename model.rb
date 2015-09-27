@@ -21,6 +21,8 @@ class Entity
   has n, :addresses, through: :addressizations
   has n, :taggizations
   has n, :tags, through: :taggizations
+  has n, :associations, child_key: [ :source_id ]
+  has n, :entities, self, through: :associations, via: :target
 end
 
 class Address
@@ -54,6 +56,15 @@ class Tag
 
   has n, :taggizations
   has n, :entities, through: :taggizations
+end
+
+class Association # This should be illegal?
+  include DataMapper::Resource
+
+  property :id, Serial
+
+  belongs_to :source, 'Entity', key: true
+  belongs_to :target, 'Entity', key: true
 end
 
 class Addressization
