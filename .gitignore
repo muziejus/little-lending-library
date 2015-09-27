@@ -1,3 +1,6 @@
+*.ignore.rb
+*.db
+*.swp
 *.gem
 *.rbc
 /.config
