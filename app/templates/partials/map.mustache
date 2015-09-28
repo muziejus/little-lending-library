@@ -1,0 +1,10 @@
+<div id="map" style="height: 500px;" class="col-md-8"></div>
+<script>
+  var map = L.map('map').setView([ 40.7308 , -73.9975 ], 15);
+  //map.fitBounds(L.latLngBounds([[41, -71], [42, -70]]));
+  L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 18,
+  }).addTo(map)
+  map.addLayer(allFeatures);
+</script>
