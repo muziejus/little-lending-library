@@ -15,7 +15,7 @@ updates and changes.
 
 The data in the database (and/or sourced by flat files) is ignored by git because privacy, so it does not get uploaded. But the logic is available here.
 
-The maps are made with [Leaflet.js](http://leafletjs.org).
+The maps are made with [Leaflet.js](http://leafletjs.com).
 
 ## License
 This project is CC BY-NC-SA, with the code being under the MIT License. See the LICENSE file for details.

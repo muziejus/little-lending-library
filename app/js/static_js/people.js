@@ -1,3 +1,4 @@
+    // static_js_start
       var margaretAvisonColor = getRandomColor();
       var style = '.' + 'margaretAvison';
       var margaretAvison = L.featureGroup([
@@ -3140,7 +3141,7 @@
           }).bindPopup('<a href="/people/439"><h3>Eve Packer</h3></a><p>185 Mcclellan St #2M<br />Bronx, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(evePacker);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
           L.circleMarker([40.7790479, -73.9809143], {
             color: evePackerColor
-          }).bindPopup('<a href="/people/439"><h3>Eve Packer</h3></a><p>170 W 73rd St #6D<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(evePacker);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          }).bindPopup('<a href="/people/439"><h3>Eve Packer</h3></a><p>170 W 73rd St #6D<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(evePacker);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var pascalPiaColor = getRandomColor();
       var style = '.' + 'pascalPia';
@@ -3543,7 +3544,7 @@
       var lindaSchjeldahl = L.featureGroup([
           L.circleMarker([40.7372115, -73.998149], {
             color: lindaSchjeldahlColor
-          }).bindPopup('<a href="/people/502"><h3>Linda Schjeldahl</h3></a><p>117 W 13th St #37<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(lindaSchjeldahl);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          }).bindPopup('<a href="/people/502"><h3>Linda Schjeldahl</h3></a><p>117 W 13th St #37<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(lindaSchjeldahl);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var leonardSahnColor = getRandomColor();
       var style = '.' + 'leonardSahn';
@@ -7323,7 +7324,7 @@
           }).bindPopup('<a href="/people/1037"><h3>Eve Packer</h3></a><p>185 Mcclellan St #2M<br />Bronx, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(evePacker);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
           L.circleMarker([40.7790479, -73.9809143], {
             color: evePackerColor
-          }).bindPopup('<a href="/people/1037"><h3>Eve Packer</h3></a><p>170 W 73rd St #6D<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(evePacker);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          }).bindPopup('<a href="/people/1037"><h3>Eve Packer</h3></a><p>170 W 73rd St #6D<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(evePacker);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="evePacker.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var pascalPiaColor = getRandomColor();
       var style = '.' + 'pascalPia';
@@ -7726,7 +7727,7 @@
       var lindaSchjeldahl = L.featureGroup([
           L.circleMarker([40.7372115, -73.998149], {
             color: lindaSchjeldahlColor
-          }).bindPopup('<a href="/people/1100"><h3>Linda Schjeldahl</h3></a><p>117 W 13th St #37<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(lindaSchjeldahl);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          }).bindPopup('<a href="/people/1100"><h3>Linda Schjeldahl</h3></a><p>117 W 13th St #37<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(lindaSchjeldahl);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="lindaSchjeldahl.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var leonardSahnColor = getRandomColor();
       var style = '.' + 'leonardSahn';
@@ -9332,5 +9333,5 @@
         patsyZoline,
         clarissaAinley,
         revMichaelAllen,
-        raoulHausmann
+        raoulHausmann,
     ]);

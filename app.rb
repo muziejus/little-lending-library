@@ -94,6 +94,7 @@ class App < Sinatra::Base
   end
 
   get "/rebuild_static_files" do
+    # this only works locally, meaning changes still have to be committed and pushed to heroku. Still, better than nothing!
     @static = false
     @people = Entity.people
     dump = mustache :people
