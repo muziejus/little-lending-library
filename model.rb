@@ -28,19 +28,23 @@ class Entity
   has n, :entities, self, through: :associations, via: :target
 
   def self.people
-    self.all(type: "person")
+    all(type: "person", order: [ :name.asc, :first_name.asc ])
   end
 
   def full_name
-    self.first_name ? "#{self.first_name} #{self.name}" : self.name
+    first_name ? "#{first_name} #{name}" : name
   end
 
   def slug
-    "#{self.first_name}_#{self.name}".parameterize.underscore.camelize(:lower)
+    "#{first_name}_#{name}".parameterize.underscore.camelize(:lower)
+  end
+
+  def slug_id
+    "#{slug}_#{id}"
   end
 
   def tags_to_sentence
-    self.tags.map{ |t| t.name}.to_sentence
+    tags.map{ |t| t.name}.to_sentence
   end
 
 end
