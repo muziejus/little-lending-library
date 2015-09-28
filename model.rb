@@ -1,5 +1,7 @@
 require 'data_mapper'
 require 'dm-validations'
+require 'active_support'
+require 'active_support/inflector'
 
 # DATABASE_URL is set by running: heroku config:set DATABASE_URL="<as in web client>"
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/sqlite.db")
@@ -23,6 +25,20 @@ class Entity
   has n, :tags, through: :taggizations
   has n, :associations, child_key: [ :source_id ]
   has n, :entities, self, through: :associations, via: :target
+
+  def self.people
+    self.all(type: "person")
+  end
+
+  def full_name
+    self.last_name ? "#{self.name} #{self.last_name}" : self.name
+  end
+
+  def slug
+    "#{self.name}_#{self.last_name}".parameterize.underscore.camelize(:lower)
+    # "#{self.name}_#{self.last_name}".sub(/_$/, "").parameterize.underscore.camelize(:lower)
+  end
+
 end
 
 class Address
