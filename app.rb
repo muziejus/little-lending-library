@@ -71,6 +71,11 @@ class App < Sinatra::Base
     mustache :people
   end
 
+  get "/people/:id" do
+    @entity = Entity.get params[:id]
+    mustache :person
+  end
+
   ["/new_york", "/bay_area", "/london", "/institutions"].each do |path|
     get path do
       redirect "/"

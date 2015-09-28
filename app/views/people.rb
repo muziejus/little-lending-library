@@ -2,6 +2,10 @@ class App
   module Views
     class People < Layout
 
+      def show_all_features
+        true
+      end
+
       def person
         @people.map{ |p| {
           id: p.id,
