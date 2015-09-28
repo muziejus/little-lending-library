@@ -27,8 +27,16 @@ class Entity
   has n, :associations, child_key: [ :source_id ]
   has n, :entities, self, through: :associations, via: :target
 
+  def self.all_sorted
+    all(order: [ :name.asc, :first_name.asc ])
+  end
+
   def self.people
     all(type: "person", order: [ :name.asc, :first_name.asc ])
+  end
+
+  def self.institutions
+    all(type: "institution", order: [ :name.asc ])
   end
 
   def full_name

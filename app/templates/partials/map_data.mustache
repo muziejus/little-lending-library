@@ -1,5 +1,5 @@
 {{#static_js}}
-  {{{ js_people }}}
+  {{{ js_dump }}}
 {{/static_js}}
 {{^static_js}}
 <script>
@@ -11,7 +11,7 @@
       {{#address}}
         L.circleMarker([{{latitude}}, {{longitude}}], {
           color: {{slug}}Color
-        }).bindPopup('<a href="/people/{{id}}"><h3>{{full_name}}</h3></a><p>{{street}}<br />{{city}}, {{state}}<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer({{slug}});resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="{{slug}}.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="{{slug}}.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+        }).bindPopup('<a href="/entities/{{slug_id}}"><h3>{{full_name}}</h3></a><p>{{street}}<br />{{city}}, {{state}}<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer({{slug}});resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="{{slug}}.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="{{slug}}.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       {{/address}}
     ]);
   {{/entity}}

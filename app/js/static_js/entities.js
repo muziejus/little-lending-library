@@ -27,12 +27,26 @@
             color: royEllenColor
           }).bindPopup('<a href="/entities/royEllen_469"><h3>Roy &amp; Ellen </h3></a><p>129 E 4th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(royEllen);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="royEllen.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="royEllen.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var AmsPressColor = getRandomColor();
+      var style = '.' + 'AmsPress';
+      var AmsPress = L.featureGroup([
+          L.circleMarker([40.7340112, -73.9916569], {
+            color: AmsPressColor
+          }).bindPopup('<a href="/entities/AmsPress_587"><h3>AMS Press</h3></a><p>56 E 13th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AmsPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AmsPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AmsPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var wardAbbottColor = getRandomColor();
       var style = '.' + 'wardAbbott';
       var wardAbbott = L.featureGroup([
           L.circleMarker([51.5206388, -0.1257111], {
             color: wardAbbottColor
           }).bindPopup('<a href="/entities/wardAbbott_153"><h3>Ward Abbott</h3></a><p>7 Russell Rd Kensington<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(wardAbbott);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="wardAbbott.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="wardAbbott.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var AbingtonBookshopColor = getRandomColor();
+      var style = '.' + 'AbingtonBookshop';
+      var AbingtonBookshop = L.featureGroup([
+          L.circleMarker([38.9650253, -95.2359211], {
+            color: AbingtonBookshopColor
+          }).bindPopup('<a href="/entities/AbingtonBookshop_13"><h3>Abington Bookshop</h3></a><p>1015 Massachusetts St<br />Lawrence, KS<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AbingtonBookshop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AbingtonBookshop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AbingtonBookshop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var samAbramsColor = getRandomColor();
       var style = '.' + 'samAbrams';
@@ -43,6 +57,13 @@
           L.circleMarker([41.9667703, -71.1869963], {
             color: samAbramsColor
           }).bindPopup('<a href="/entities/samAbrams_12"><h3>Sam Abrams</h3></a><p>PO Box 903<br />Norton, MA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(samAbrams);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="samAbrams.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="samAbrams.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var AcademyOfAmericanPoetsColor = getRandomColor();
+      var style = '.' + 'AcademyOfAmericanPoets';
+      var AcademyOfAmericanPoets = L.featureGroup([
+          L.circleMarker([40.7779897, -73.9611711], {
+            color: AcademyOfAmericanPoetsColor
+          }).bindPopup('<a href="/entities/AcademyOfAmericanPoets_18"><h3>Academy of American Poets</h3></a><p>1078 Madison Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AcademyOfAmericanPoets);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AcademyOfAmericanPoets.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AcademyOfAmericanPoets.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var vitoHannibalAcconciColor = getRandomColor();
       var style = '.' + 'vitoHannibalAcconci';
@@ -95,6 +116,13 @@
             color: revMichaelAllenColor
           }).bindPopup('<a href="/entities/revMichaelAllen_597"><h3>Rev. Michael Allen</h3></a><p>131 E 10th St<br />New York, NJ<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(revMichaelAllen);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="revMichaelAllen.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="revMichaelAllen.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var AlternativePressColor = getRandomColor();
+      var style = '.' + 'AlternativePress';
+      var AlternativePress = L.featureGroup([
+          L.circleMarker([42.346981, -83.079019], {
+            color: AlternativePressColor
+          }).bindPopup('<a href="/entities/AlternativePress_23"><h3>Alternative Press</h3></a><p>4339 Avery St<br />Detroit, MI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AlternativePress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AlternativePress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AlternativePress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var bruceAndrewsColor = getRandomColor();
       var style = '.' + 'bruceAndrews';
       var bruceAndrews = L.featureGroup([
@@ -104,6 +132,13 @@
           L.circleMarker([38.9102409, -77.0557333], {
             color: bruceAndrewsColor
           }).bindPopup('<a href="/entities/bruceAndrews_22"><h3>Bruce Andrews</h3></a><p>2700 Q St NW<br />Washington, DC<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(bruceAndrews);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="bruceAndrews.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="bruceAndrews.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var AngelHairBooksColor = getRandomColor();
+      var style = '.' + 'AngelHairBooks';
+      var AngelHairBooks = L.featureGroup([
+          L.circleMarker([40.731867, -73.983213], {
+            color: AngelHairBooksColor
+          }).bindPopup('<a href="/entities/AngelHairBooks_15"><h3>Angel Hair Books</h3></a><p>PO Box 257 Peter Stuyvesant Station<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AngelHairBooks);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AngelHairBooks.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AngelHairBooks.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var alanAnsenColor = getRandomColor();
       var style = '.' + 'alanAnsen';
@@ -136,6 +171,20 @@
             color: peterArmstrongColor
           }).bindPopup('<a href="/entities/peterArmstrong_11"><h3>Peter Armstrong</h3></a><p>1 Richmond Park Rd<br />Bristol, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(peterArmstrong);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="peterArmstrong.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="peterArmstrong.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var ArtNewsColor = getRandomColor();
+      var style = '.' + 'ArtNews';
+      var ArtNews = L.featureGroup([
+          L.circleMarker([40.7576844, -73.9760548], {
+            color: ArtNewsColor
+          }).bindPopup('<a href="/entities/ArtNews_9"><h3>Art News</h3></a><p>Newsweek Building, 444 Madison Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ArtNews);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ArtNews.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ArtNews.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var ArtAndLiteratureColor = getRandomColor();
+      var style = '.' + 'ArtAndLiterature';
+      var ArtAndLiterature = L.featureGroup([
+          L.circleMarker([48.8584177, 2.3623509], {
+            color: ArtAndLiteratureColor
+          }).bindPopup('<a href="/entities/ArtAndLiterature_7"><h3>Art and Literature</h3></a><p>13 Rue Payenne<br />Paris, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ArtAndLiterature);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ArtAndLiterature.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ArtAndLiterature.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var johnAshberyColor = getRandomColor();
       var style = '.' + 'johnAshbery';
       var johnAshbery = L.featureGroup([
@@ -148,6 +197,34 @@
           L.circleMarker([40.737555, -73.984941], {
             color: johnAshberyColor
           }).bindPopup('<a href="/entities/johnAshbery_8"><h3>John Ashbery</h3></a><p>36 Gramercy Park E #12w<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(johnAshbery);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="johnAshbery.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="johnAshbery.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var AsphodelBookshopColor = getRandomColor();
+      var style = '.' + 'AsphodelBookshop';
+      var AsphodelBookshop = L.featureGroup([
+          L.circleMarker([41.4999493, -81.6903492], {
+            color: AsphodelBookshopColor
+          }).bindPopup('<a href="/entities/AsphodelBookshop_295"><h3>Asphodel Bookshop</h3></a><p>401 Euclid Ave (465 The Arcade)<br />Cleveland, OH<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AsphodelBookshop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AsphodelBookshop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AsphodelBookshop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var AtlanticMonthlyColor = getRandomColor();
+      var style = '.' + 'AtlanticMonthly';
+      var AtlanticMonthly = L.featureGroup([
+          L.circleMarker([42.3516728, -71.1520743], {
+            color: AtlanticMonthlyColor
+          }).bindPopup('<a href="/entities/AtlanticMonthly_25"><h3>Atlantic Monthly</h3></a><p>8 Arlington St<br />Boston, MA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AtlanticMonthly);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AtlanticMonthly.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AtlanticMonthly.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var AuerhahnPressColor = getRandomColor();
+      var style = '.' + 'AuerhahnPress';
+      var AuerhahnPress = L.featureGroup([
+          L.circleMarker([37.7869181, -122.423313], {
+            color: AuerhahnPressColor
+          }).bindPopup('<a href="/entities/AuerhahnPress_5"><h3>Auerhahn Press</h3></a><p>1334 Franklin St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AuerhahnPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AuerhahnPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AuerhahnPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var AvantGardeColor = getRandomColor();
+      var style = '.' + 'AvantGarde';
+      var AvantGarde = L.featureGroup([
+          L.circleMarker([40.7536194, -73.9859737], {
+            color: AvantGardeColor
+          }).bindPopup('<a href="/entities/AvantGarde_371"><h3>Avant Garde</h3></a><p>110 W 40th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(AvantGarde);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="AvantGarde.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="AvantGarde.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var margaretAvisonColor = getRandomColor();
       var style = '.' + 'margaretAvison';
@@ -315,12 +392,26 @@
             color: tedBerriganColor
           }).bindPopup('<a href="/entities/tedBerrigan_47"><h3>Ted Berrigan</h3></a><p>180 Webster St<br />Pawtucket, RI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tedBerrigan);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tedBerrigan.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tedBerrigan.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var BetterBooksColor = getRandomColor();
+      var style = '.' + 'BetterBooks';
+      var BetterBooks = L.featureGroup([
+          L.circleMarker([51.5137903, -0.1292597], {
+            color: BetterBooksColor
+          }).bindPopup('<a href="/entities/BetterBooks_48"><h3>Better Books</h3></a><p>92-94 Charing Cross Rd<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(BetterBooks);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="BetterBooks.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="BetterBooks.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var billBissettColor = getRandomColor();
       var style = '.' + 'billBissett';
       var billBissett = L.featureGroup([
           L.circleMarker([49.1966913, -123.1815123], {
             color: billBissettColor
           }).bindPopup('<a href="/entities/billBissett_35"><h3>Bill Bissett</h3></a><p>PO Box 8590 Station H<br />Vancouver, BC<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(billBissett);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="billBissett.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="billBissett.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var BlackSparrowPressColor = getRandomColor();
+      var style = '.' + 'BlackSparrowPress';
+      var BlackSparrowPress = L.featureGroup([
+          L.circleMarker([34.0522342, -118.2436849], {
+            color: BlackSparrowPressColor
+          }).bindPopup('<a href="/entities/BlackSparrowPress_67"><h3>Black Sparrow Press</h3></a><p>PO Box 25603<br />Los Angeles, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(BlackSparrowPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="BlackSparrowPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="BlackSparrowPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var paulBlackburnColor = getRandomColor();
       var style = '.' + 'paulBlackburn';
@@ -335,6 +426,13 @@
           L.circleMarker([37.7994419, -122.4196275], {
             color: robinBlaserColor
           }).bindPopup('<a href="/entities/robinBlaser_44"><h3>Robin Blaser</h3></a><p>24 Allen St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(robinBlaser);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="robinBlaser.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="robinBlaser.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var BlueThumbRecordsColor = getRandomColor();
+      var style = '.' + 'BlueThumbRecords';
+      var BlueThumbRecords = L.featureGroup([
+          L.circleMarker([34.07962, -118.4116476], {
+            color: BlueThumbRecordsColor
+          }).bindPopup('<a href="/entities/BlueThumbRecords_513"><h3>Blue Thumb Records</h3></a><p>1427 N Cañon Dr<br />Beverly Hills, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(BlueThumbRecords);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="BlueThumbRecords.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="BlueThumbRecords.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var ettaBlumColor = getRandomColor();
       var style = '.' + 'ettaBlum';
@@ -362,6 +460,13 @@
           L.circleMarker([51.9524997, 0.3457911], {
             color: robertBlyColor
           }).bindPopup('<a href="/entities/robertBly_43"><h3>Robert Bly</h3></a><p>21 Mill End<br />Thaxted, Dunmow, Essex, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(robertBly);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="robertBly.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="robertBly.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var BonesColor = getRandomColor();
+      var style = '.' + 'Bones';
+      var Bones = L.featureGroup([
+          L.circleMarker([40.788173, -73.969577], {
+            color: BonesColor
+          }).bindPopup('<a href="/entities/Bones_50"><h3>Bones</h3></a><p>53 W 89th St #2a<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Bones);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Bones.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Bones.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var ebbeBorregaardColor = getRandomColor();
       var style = '.' + 'ebbeBorregaard';
@@ -605,6 +710,13 @@
             color: stephenACanadaColor
           }).bindPopup('<a href="/entities/stephenACanada_104"><h3>Stephen A. Canada</h3></a><p>894 S Pasadena Ave<br />Pasadena, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(stephenACanada);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="stephenACanada.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="stephenACanada.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var CapeGoliardColor = getRandomColor();
+      var style = '.' + 'CapeGoliard';
+      var CapeGoliard = L.featureGroup([
+          L.circleMarker([51.5461794, -0.1852274], {
+            color: CapeGoliardColor
+          }).bindPopup('<a href="/entities/CapeGoliard_262"><h3>Cape Goliard</h3></a><p>102 Fairhazel Gardens<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(CapeGoliard);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="CapeGoliard.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="CapeGoliard.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var ronaldCaplanColor = getRandomColor();
       var style = '.' + 'ronaldCaplan';
       var ronaldCaplan = L.featureGroup([
@@ -691,6 +803,13 @@
             color: mmeBlaiseCendrarsColor
           }).bindPopup('<a href="/entities/mmeBlaiseCendrars_108"><h3>Mme. Blaise Cendrars</h3></a><p>23 Rue Jean Dolent<br />Paris, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(mmeBlaiseCendrars);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="mmeBlaiseCendrars.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="mmeBlaiseCendrars.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var CenticoreBooksColor = getRandomColor();
+      var style = '.' + 'CenticoreBooks';
+      var CenticoreBooks = L.featureGroup([
+          L.circleMarker([42.2751568, -83.7335828], {
+            color: CenticoreBooksColor
+          }).bindPopup('<a href="/entities/CenticoreBooks_561"><h3>Centicore Books</h3></a><p>1229 S. University Ave<br />Ann Arbor, MI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(CenticoreBooks);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="CenticoreBooks.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="CenticoreBooks.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var joeCeravoloColor = getRandomColor();
       var style = '.' + 'joeCeravolo';
       var joeCeravolo = L.featureGroup([
@@ -734,6 +853,13 @@
           L.circleMarker([40.7327983, -73.9851936], {
             color: stevieChusmanColor
           }).bindPopup('<a href="/entities/stevieChusman_126"><h3>Stevie Chusman</h3></a><p>243 E 14th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(stevieChusman);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="stevieChusman.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="stevieChusman.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var CityLightsColor = getRandomColor();
+      var style = '.' + 'CityLights';
+      var CityLights = L.featureGroup([
+          L.circleMarker([37.797601, -122.406579], {
+            color: CityLightsColor
+          }).bindPopup('<a href="/entities/CityLights_94"><h3>City Lights</h3></a><p>261 Columbus Ave<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(CityLights);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="CityLights.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="CityLights.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var johnClarkColor = getRandomColor();
       var style = '.' + 'johnClark';
@@ -789,6 +915,13 @@
           L.circleMarker([40.02481, -105.286999], {
             color: jackCollomColor
           }).bindPopup('<a href="/entities/jackCollom_85"><h3>Jack Collom</h3></a><p>667 North St<br />Boulder, CO<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jackCollom);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jackCollom.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jackCollom.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var ColumbiaPicturesColor = getRandomColor();
+      var style = '.' + 'ColumbiaPictures';
+      var ColumbiaPictures = L.featureGroup([
+          L.circleMarker([51.5147368, -0.1345577], {
+            color: ColumbiaPicturesColor
+          }).bindPopup('<a href="/entities/ColumbiaPictures_3"><h3>Columbia Pictures</h3></a><p>142 Wardour St Soho<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ColumbiaPictures);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ColumbiaPictures.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ColumbiaPictures.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var gwenConnetColor = getRandomColor();
       var style = '.' + 'gwenConnet';
@@ -870,6 +1003,13 @@
             color: jonathanCottColor
           }).bindPopup('<a href="/entities/jonathanCott_109"><h3>Jonathan Cott</h3></a><p>165 E 66th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jonathanCott);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jonathanCott.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jonathanCott.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var CowColor = getRandomColor();
+      var style = '.' + 'Cow';
+      var Cow = L.featureGroup([
+          L.circleMarker([37.7862821, -122.3946421], {
+            color: CowColor
+          }).bindPopup('<a href="/entities/Cow_97"><h3>Cow</h3></a><p>31 Guy Pl<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Cow);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Cow.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Cow.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var davidSusanCoxheadColor = getRandomColor();
       var style = '.' + 'davidSusanCoxhead';
       var davidSusanCoxhead = L.featureGroup([
@@ -879,6 +1019,16 @@
           L.circleMarker([51.2383002, -0.560098], {
             color: davidSusanCoxheadColor
           }).bindPopup('<a href="/entities/davidSusanCoxhead_110"><h3>David &amp; Susan Coxhead</h3></a><p>Garden Croft Beechlawn<br />Guildford, Surrey, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(davidSusanCoxhead);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="davidSusanCoxhead.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="davidSusanCoxhead.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var CoyoteSJournalColor = getRandomColor();
+      var style = '.' + 'CoyoteSJournal';
+      var CoyoteSJournal = L.featureGroup([
+          L.circleMarker([44.032539, -123.075159], {
+            color: CoyoteSJournalColor
+          }).bindPopup('<a href="/entities/CoyoteSJournal_552"><h3>Coyote’s Journal</h3></a><p>1175 E 25th Ave<br />Eugene, OR<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(CoyoteSJournal);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="CoyoteSJournal.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="CoyoteSJournal.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([37.822862, -122.253328], {
+            color: CoyoteSJournalColor
+          }).bindPopup('<a href="/entities/CoyoteSJournal_552"><h3>Coyote’s Journal</h3></a><p>91 Rio Vista Ave<br />Oakland, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(CoyoteSJournal);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="CoyoteSJournal.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="CoyoteSJournal.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var leeCrabtreeColor = getRandomColor();
       var style = '.' + 'leeCrabtree';
@@ -923,6 +1073,13 @@
             color: robertCreeleyColor
           }).bindPopup('<a href="/entities/robertCreeley_80"><h3>Robert Creeley</h3></a><p>256 Woodbridge Ave<br />Buffalo, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(robertCreeley);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="robertCreeley.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="robertCreeley.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var CreemColor = getRandomColor();
+      var style = '.' + 'Creem';
+      var Creem = L.featureGroup([
+          L.circleMarker([42.347176, -83.061984], {
+            color: CreemColor
+          }).bindPopup('<a href="/entities/Creem_365"><h3>Creem</h3></a><p>3729 Cass Ave<br />Detroit, MI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Creem);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Creem.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Creem.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var judsonCrewsColor = getRandomColor();
       var style = '.' + 'judsonCrews';
       var judsonCrews = L.featureGroup([
@@ -962,6 +1119,13 @@
             color: fieldingDawsonColor
           }).bindPopup('<a href="/entities/fieldingDawson_141"><h3>Fielding Dawson</h3></a><p>49 E 19th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(fieldingDawson);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="fieldingDawson.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="fieldingDawson.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var DaytonSRecordsColor = getRandomColor();
+      var style = '.' + 'DaytonSRecords';
+      var DaytonSRecords = L.featureGroup([
+          L.circleMarker([40.7330079, -73.9909326], {
+            color: DaytonSRecordsColor
+          }).bindPopup('<a href="/entities/DaytonSRecords_155"><h3>Dayton’s Records</h3></a><p>824 Broadway<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(DaytonSRecords);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="DaytonSRecords.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="DaytonSRecords.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var allenDeLoachColor = getRandomColor();
       var style = '.' + 'allenDeLoach';
       var allenDeLoach = L.featureGroup([
@@ -993,12 +1157,33 @@
             color: leeDejasuColor
           }).bindPopup('<a href="/entities/leeDejasu_160"><h3>Lee Dejasu</h3></a><p>64 Woodbine St<br />Providence, RI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(leeDejasu);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="leeDejasu.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="leeDejasu.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var DeltaColor = getRandomColor();
+      var style = '.' + 'Delta';
+      var Delta = L.featureGroup([
+          L.circleMarker([45.4766305, -73.6087706], {
+            color: DeltaColor
+          }).bindPopup('<a href="/entities/Delta_134"><h3>Delta</h3></a><p>3476 Vendome Ave<br />Montreal, QC<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Delta);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Delta.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Delta.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var edwinDenbyColor = getRandomColor();
       var style = '.' + 'edwinDenby';
       var edwinDenby = L.featureGroup([
           L.circleMarker([40.742526, -73.995312], {
             color: edwinDenbyColor
           }).bindPopup('<a href="/entities/edwinDenby_144"><h3>Edwin Denby</h3></a><p>145 W 21st St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwinDenby);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwinDenby.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwinDenby.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var DesertReviewColor = getRandomColor();
+      var style = '.' + 'DesertReview';
+      var DesertReview = L.featureGroup([
+          L.circleMarker([51.5206388, -0.1257111], {
+            color: DesertReviewColor
+          }).bindPopup('<a href="/entities/DesertReview_152"><h3>Desert Review</h3></a><p>7 Russell Rd Kensington<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(DesertReview);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="DesertReview.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="DesertReview.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var DesertReviewPressColor = getRandomColor();
+      var style = '.' + 'DesertReviewPress';
+      var DesertReviewPress = L.featureGroup([
+          L.circleMarker([35.067801, -106.598362], {
+            color: DesertReviewPressColor
+          }).bindPopup('<a href="/entities/DesertReviewPress_143"><h3>Desert Review Press</h3></a><p>917 Idlewilde Ln SE<br />Albuquerque, NM<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(DesertReviewPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="DesertReviewPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="DesertReviewPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var DesmondColor = getRandomColor();
       var style = '.' + 'Desmond';
@@ -1092,6 +1277,13 @@
             color: edwardDornColor
           }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>Stewart St<br />West Newbury, MA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var DoubledayCoColor = getRandomColor();
+      var style = '.' + 'DoubledayCo';
+      var DoubledayCo = L.featureGroup([
+          L.circleMarker([40.7555122, -73.9748], {
+            color: DoubledayCoColor
+          }).bindPopup('<a href="/entities/DoubledayCo_158"><h3>Doubleday &amp; Co.</h3></a><p>277 Park Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(DoubledayCo);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="DoubledayCo.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="DoubledayCo.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var marcelDuchampColor = getRandomColor();
       var style = '.' + 'marcelDuchamp';
       var marcelDuchamp = L.featureGroup([
@@ -1105,6 +1297,13 @@
           L.circleMarker([45.4766305, -73.6087706], {
             color: louisDudekColor
           }).bindPopup('<a href="/entities/louisDudek_135"><h3>Louis Dudek</h3></a><p>3476 Vendome Ave<br />Montreal, QC<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(louisDudek);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="louisDudek.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="louisDudek.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var DuendeColor = getRandomColor();
+      var style = '.' + 'Duende';
+      var Duende = L.featureGroup([
+          L.circleMarker([35.3069845, -106.4247468], {
+            color: DuendeColor
+          }).bindPopup('<a href="/entities/Duende_198"><h3>Duende</h3></a><p>PO Box 571<br />Placitas, NM<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Duende);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Duende.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Duende.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var richardDuerdenColor = getRandomColor();
       var style = '.' + 'richardDuerden';
@@ -1174,12 +1373,40 @@
             color: robinEicheleColor
           }).bindPopup('<a href="/entities/robinEichele_164"><h3>Robin Eichele</h3></a><p>1252 W Forest Ave<br />Detroit, MI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(robinEichele);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="robinEichele.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="robinEichele.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var EighthStreetBookshopColor = getRandomColor();
+      var style = '.' + 'EighthStreetBookshop';
+      var EighthStreetBookshop = L.featureGroup([
+          L.circleMarker([40.732888, -73.99731], {
+            color: EighthStreetBookshopColor
+          }).bindPopup('<a href="/entities/EighthStreetBookshop_196"><h3>Eighth Street Bookshop</h3></a><p>17 W 8th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(EighthStreetBookshop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="EighthStreetBookshop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="EighthStreetBookshop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var larryEignerColor = getRandomColor();
       var style = '.' + 'larryEigner';
       var larryEigner = L.featureGroup([
           L.circleMarker([42.4677048, -70.8985537], {
             color: larryEignerColor
           }).bindPopup('<a href="/entities/larryEigner_162"><h3>Larry Eigner</h3></a><p>23 Bates Rd<br />Swampscott, MA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(larryEigner);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="larryEigner.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="larryEigner.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var ElectricCircusColor = getRandomColor();
+      var style = '.' + 'ElectricCircus';
+      var ElectricCircus = L.featureGroup([
+          L.circleMarker([40.7291586, -73.9884404], {
+            color: ElectricCircusColor
+          }).bindPopup('<a href="/entities/ElectricCircus_168"><h3>Electric Circus</h3></a><p>19-25 St Marks Pl<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ElectricCircus);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ElectricCircus.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ElectricCircus.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var ElephantColor = getRandomColor();
+      var style = '.' + 'Elephant';
+      var Elephant = L.featureGroup([
+          L.circleMarker([40.7238734, -73.9761971], {
+            color: ElephantColor
+          }).bindPopup('<a href="/entities/Elephant_434"><h3>Elephant</h3></a><p>403 E 8th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Elephant);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Elephant.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Elephant.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var EleventhFingerColor = getRandomColor();
+      var style = '.' + 'EleventhFinger';
+      var EleventhFinger = L.featureGroup([
+          L.circleMarker([50.819165, -0.1278287], {
+            color: EleventhFingerColor
+          }).bindPopup('<a href="/entities/EleventhFinger_170"><h3>Eleventh Finger</h3></a><p>1 Charlotte St., Brighton<br />The City of Brighton and Hove, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(EleventhFinger);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="EleventhFinger.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="EleventhFinger.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var kenwardElmslieColor = getRandomColor();
       var style = '.' + 'kenwardElmslie';
@@ -1204,6 +1431,13 @@
           L.circleMarker([50.819165, -0.1278287], {
             color: paulEvansColor
           }).bindPopup('<a href="/entities/paulEvans_171"><h3>Paul Evans</h3></a><p>1 Charlotte St., Brighton<br />The City of Brighton and Hove, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(paulEvans);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="paulEvans.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="paulEvans.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var EvergreenReviewColor = getRandomColor();
+      var style = '.' + 'EvergreenReview';
+      var EvergreenReview = L.featureGroup([
+          L.circleMarker([40.7335348, -73.9935615], {
+            color: EvergreenReviewColor
+          }).bindPopup('<a href="/entities/EvergreenReview_165"><h3>Evergreen Review</h3></a><p>80 University Pl<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(EvergreenReview);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="EvergreenReview.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="EvergreenReview.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var larryFaginColor = getRandomColor();
       var style = '.' + 'larryFagin';
@@ -1272,6 +1506,13 @@
             color: dannyFieldsColor
           }).bindPopup('<a href="/entities/dannyFields_193"><h3>Danny Fields</h3></a><p>7 W 20th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(dannyFields);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="dannyFields.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="dannyFields.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var FilmexIncColor = getRandomColor();
+      var style = '.' + 'FilmexInc';
+      var FilmexInc = L.featureGroup([
+          L.circleMarker([40.7521188, -73.9701789], {
+            color: FilmexIncColor
+          }).bindPopup('<a href="/entities/FilmexInc_125"><h3>Filmex, Inc</h3></a><p>Communications Dept. 300 E 46th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(FilmexInc);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="FilmexInc.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="FilmexInc.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var ianHamiltonFinlayColor = getRandomColor();
       var style = '.' + 'ianHamiltonFinlay';
       var ianHamiltonFinlay = L.featureGroup([
@@ -1319,6 +1560,20 @@
             color: jamesFitzsimmonsColor
           }).bindPopup('<a href="/entities/jamesFitzsimmons_292"><h3>James Fitzsimmons</h3></a><p>Via Clemente Maraini 17A<br />Lugano, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jamesFitzsimmons);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jamesFitzsimmons.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jamesFitzsimmons.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var FolkloreCenterColor = getRandomColor();
+      var style = '.' + 'FolkloreCenter';
+      var FolkloreCenter = L.featureGroup([
+          L.circleMarker([40.73113, -74.0017065], {
+            color: FolkloreCenterColor
+          }).bindPopup('<a href="/entities/FolkloreCenter_588"><h3>Folklore Center</h3></a><p>321 Avenue of the Americas<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(FolkloreCenter);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="FolkloreCenter.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="FolkloreCenter.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var FollettPublishingCoColor = getRandomColor();
+      var style = '.' + 'FollettPublishingCo';
+      var FollettPublishingCo = L.featureGroup([
+          L.circleMarker([41.8830664, -87.6524906], {
+            color: FollettPublishingCoColor
+          }).bindPopup('<a href="/entities/FollettPublishingCo_86"><h3>Follett Publishing Co.</h3></a><p>1010 W Washington Blvd<br />Chicago, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(FollettPublishingCo);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="FollettPublishingCo.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="FollettPublishingCo.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var robertFrancisColor = getRandomColor();
       var style = '.' + 'robertFrancis';
       var robertFrancis = L.featureGroup([
@@ -1340,6 +1595,20 @@
             color: kathleenFraserColor
           }).bindPopup('<a href="/entities/kathleenFraser_185"><h3>Kathleen Fraser</h3></a><p>159 Essex St #1C<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(kathleenFraser);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="kathleenFraser.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="kathleenFraser.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var FreeUniversityOfNewYorkColor = getRandomColor();
+      var style = '.' + 'FreeUniversityOfNewYork';
+      var FreeUniversityOfNewYork = L.featureGroup([
+          L.circleMarker([40.7353447, -73.9926955], {
+            color: FreeUniversityOfNewYorkColor
+          }).bindPopup('<a href="/entities/FreeUniversityOfNewYork_338"><h3>Free University of New York</h3></a><p>20 E 14th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(FreeUniversityOfNewYork);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="FreeUniversityOfNewYork.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="FreeUniversityOfNewYork.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var FrettedInstrumentSchoolColor = getRandomColor();
+      var style = '.' + 'FrettedInstrumentSchool';
+      var FrettedInstrumentSchool = L.featureGroup([
+          L.circleMarker([40.7310353, -74.0014554], {
+            color: FrettedInstrumentSchoolColor
+          }).bindPopup('<a href="/entities/FrettedInstrumentSchool_189"><h3>Fretted Instrument School</h3></a><p>319 Avenue of the Americas<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(FrettedInstrumentSchool);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="FrettedInstrumentSchool.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="FrettedInstrumentSchool.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var geraldFreundColor = getRandomColor();
       var style = '.' + 'geraldFreund';
       var geraldFreund = L.featureGroup([
@@ -1356,6 +1625,13 @@
           L.circleMarker([42.0220059, -87.6718736], {
             color: richFriedmanColor
           }).bindPopup('<a href="/entities/richFriedman_195"><h3>Rich Friedman</h3></a><p>7724 N Marshfield Ave<br />Chicago, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(richFriedman);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="richFriedman.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="richFriedman.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var FubbaloColor = getRandomColor();
+      var style = '.' + 'Fubbalo';
+      var Fubbalo = L.featureGroup([
+          L.circleMarker([42.955364, -78.8214035], {
+            color: FubbaloColor
+          }).bindPopup('<a href="/entities/Fubbalo_180"><h3>Fubbalo</h3></a><p>3400 Main St<br />Buffalo, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Fubbalo);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Fubbalo.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Fubbalo.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var maxineGaddColor = getRandomColor();
       var style = '.' + 'maxineGadd';
@@ -1454,6 +1730,13 @@
             color: barbaraGladstoneColor
           }).bindPopup('<a href="/entities/barbaraGladstone_210"><h3>Barbara Gladstone</h3></a><p>79 Linden Gardens<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(barbaraGladstone);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="barbaraGladstone.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="barbaraGladstone.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var GnomonPressColor = getRandomColor();
+      var style = '.' + 'GnomonPress';
+      var GnomonPress = L.featureGroup([
+          L.circleMarker([37.753181, -122.410732], {
+            color: GnomonPressColor
+          }).bindPopup('<a href="/entities/GnomonPress_203"><h3>Gnomon Press</h3></a><p>1171 Alabama St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(GnomonPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="GnomonPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="GnomonPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var johnGodfreyColor = getRandomColor();
       var style = '.' + 'johnGodfrey';
       var johnGodfrey = L.featureGroup([
@@ -1520,12 +1803,26 @@
             color: ronGorchovColor
           }).bindPopup('<a href="/entities/ronGorchov_222"><h3>Ron Gorchov</h3></a><p>74 Grand St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ronGorchov);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ronGorchov.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ronGorchov.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var GothamBookMartColor = getRandomColor();
+      var style = '.' + 'GothamBookMart';
+      var GothamBookMart = L.featureGroup([
+          L.circleMarker([40.7578129, -73.9805234], {
+            color: GothamBookMartColor
+          }).bindPopup('<a href="/entities/GothamBookMart_206"><h3>Gotham Book Mart</h3></a><p>41 W 47th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(GothamBookMart);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="GothamBookMart.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="GothamBookMart.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var pannaGradyColor = getRandomColor();
       var style = '.' + 'pannaGrady';
       var pannaGrady = L.featureGroup([
           L.circleMarker([51.5277478, -0.1629744], {
             color: pannaGradyColor
           }).bindPopup('<a href="/entities/pannaGrady_217"><h3>Panna Grady</h3></a><p>17 Hanover Terrace Marylebone<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(pannaGrady);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="pannaGrady.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="pannaGrady.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var GrassrootsColor = getRandomColor();
+      var style = '.' + 'Grassroots';
+      var Grassroots = L.featureGroup([
+          L.circleMarker([40.7497676, -111.881531], {
+            color: GrassrootsColor
+          }).bindPopup('<a href="/entities/Grassroots_220"><h3>Grassroots</h3></a><p>332 E. 9th<br />, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Grassroots);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Grassroots.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Grassroots.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var paulGreenColor = getRandomColor();
       var style = '.' + 'paulGreen';
@@ -1640,6 +1937,20 @@
             color: ianHamiltonColor
           }).bindPopup('<a href="/entities/ianHamilton_232"><h3>Ian Hamilton</h3></a><p>104 Beech Croft Rd<br />Oxford, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ianHamilton);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ianHamilton.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ianHamilton.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var HardwarePoetsOccasionalColor = getRandomColor();
+      var style = '.' + 'HardwarePoetsOccasional';
+      var HardwarePoetsOccasional = L.featureGroup([
+          L.circleMarker([40.756497, -73.965951], {
+            color: HardwarePoetsOccasionalColor
+          }).bindPopup('<a href="/entities/HardwarePoetsOccasional_238"><h3>Hardware Poets Occasional</h3></a><p>323 E 53rd St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(HardwarePoetsOccasional);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="HardwarePoetsOccasional.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="HardwarePoetsOccasional.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var HarperSMagazineColor = getRandomColor();
+      var style = '.' + 'HarperSMagazine';
+      var HarperSMagazine = L.featureGroup([
+          L.circleMarker([40.7463337, -73.9824637], {
+            color: HarperSMagazineColor
+          }).bindPopup('<a href="/entities/HarperSMagazine_251"><h3>Harper’s Magazine</h3></a><p>2 Park Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(HarperSMagazine);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="HarperSMagazine.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="HarperSMagazine.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var billHarrisColor = getRandomColor();
       var style = '.' + 'billHarris';
       var billHarris = L.featureGroup([
@@ -1715,6 +2026,13 @@
             color: dRHazeltonColor
           }).bindPopup('<a href="/entities/dRHazelton_235"><h3>D.R. Hazelton</h3></a><p>1125 Hearst Ave<br />Berkeley, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(dRHazelton);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="dRHazelton.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="dRHazelton.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var HeadColor = getRandomColor();
+      var style = '.' + 'Head';
+      var Head = L.featureGroup([
+          L.circleMarker([41.8498151, -73.9301365], {
+            color: HeadColor
+          }).bindPopup('<a href="/entities/Head_257"><h3>Head</h3></a><p>Post Office<br />Staatsburg, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Head);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Head.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Head.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var kateHeliczerColor = getRandomColor();
       var style = '.' + 'kateHeliczer';
       var kateHeliczer = L.featureGroup([
@@ -1731,6 +2049,13 @@
           L.circleMarker([40.7155213, -73.9845544], {
             color: pieroHeliczerColor
           }).bindPopup('<a href="/entities/pieroHeliczer_255"><h3>Piero Heliczer</h3></a><p>450 Grand St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(pieroHeliczer);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="pieroHeliczer.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="pieroHeliczer.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var HenryMSnyderCoColor = getRandomColor();
+      var style = '.' + 'HenryMSnyderCo';
+      var HenryMSnyderCo = L.featureGroup([
+          L.circleMarker([40.7444077, -73.983565], {
+            color: HenryMSnyderCoColor
+          }).bindPopup('<a href="/entities/HenryMSnyderCo_500"><h3>Henry M. Snyder &amp; Co.</h3></a><p>440 Park Ave S<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(HenryMSnyderCo);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="HenryMSnyderCo.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="HenryMSnyderCo.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var jeremyHiltonColor = getRandomColor();
       var style = '.' + 'jeremyHilton';
@@ -1795,6 +2120,13 @@
             color: anselmHolloColor
           }).bindPopup('<a href="/entities/anselmHollo_243"><h3>Anselm Hollo</h3></a><p>444 S Johnson St<br />Iowa City, IA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(anselmHollo);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="anselmHollo.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="anselmHollo.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var HoltRinehartWinstonColor = getRandomColor();
+      var style = '.' + 'HoltRinehartWinston';
+      var HoltRinehartWinston = L.featureGroup([
+          L.circleMarker([40.7556787, -73.9771774], {
+            color: HoltRinehartWinstonColor
+          }).bindPopup('<a href="/entities/HoltRinehartWinston_253"><h3>Holt Rinehart &amp; Winston</h3></a><p>383 Madison Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(HoltRinehartWinston);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="HoltRinehartWinston.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="HoltRinehartWinston.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var lindaHoodColor = getRandomColor();
       var style = '.' + 'lindaHood';
       var lindaHood = L.featureGroup([
@@ -1829,6 +2161,13 @@
           L.circleMarker([51.515654, -0.2013433], {
             color: michaelHorovitzColor
           }).bindPopup('<a href="/entities/michaelHorovitz_245"><h3>Michael Horovitz</h3></a><p>29 Colville Terrace<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(michaelHorovitz);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="michaelHorovitz.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="michaelHorovitz.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var HouseOfBooksLtdColor = getRandomColor();
+      var style = '.' + 'HouseOfBooksLtd';
+      var HouseOfBooksLtd = L.featureGroup([
+          L.circleMarker([40.7641974, -73.9709453], {
+            color: HouseOfBooksLtdColor
+          }).bindPopup('<a href="/entities/HouseOfBooksLtd_112"><h3>House of Books Ltd</h3></a><p>18 E 60th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(HouseOfBooksLtd);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="HouseOfBooksLtd.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="HouseOfBooksLtd.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var peterHowardColor = getRandomColor();
       var style = '.' + 'peterHoward';
@@ -1880,12 +2219,43 @@
             color: haroldHumesColor
           }).bindPopup('<a href="/entities/haroldHumes_236"><h3>Harold Humes</h3></a><p>17 Moore St Chelsea<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(haroldHumes);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="haroldHumes.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="haroldHumes.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var IndicaBooksAndGalleryColor = getRandomColor();
+      var style = '.' + 'IndicaBooksAndGallery';
+      var IndicaBooksAndGallery = L.featureGroup([
+          L.circleMarker([51.5076125, -0.1372408], {
+            color: IndicaBooksAndGalleryColor
+          }).bindPopup('<a href="/entities/IndicaBooksAndGallery_272"><h3>Indica Books and Gallery</h3></a><p>6 Masons Yard St. James’s<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(IndicaBooksAndGallery);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="IndicaBooksAndGallery.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="IndicaBooksAndGallery.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([51.5203119, -0.1223896], {
+            color: IndicaBooksAndGalleryColor
+          }).bindPopup('<a href="/entities/IndicaBooksAndGallery_272"><h3>Indica Books and Gallery</h3></a><p>102 Southampton Row<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(IndicaBooksAndGallery);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="IndicaBooksAndGallery.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="IndicaBooksAndGallery.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var joanInglisColor = getRandomColor();
       var style = '.' + 'joanInglis';
       var joanInglis = L.featureGroup([
           L.circleMarker([40.7877641, -73.9751626], {
             color: joanInglisColor
           }).bindPopup('<a href="/entities/joanInglis_278"><h3>Joan Inglis</h3></a><p>205 W 86th St #712<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(joanInglis);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="joanInglis.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="joanInglis.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var InternationalChristianUniversityJapanColor = getRandomColor();
+      var style = '.' + 'InternationalChristianUniversityJapan';
+      var InternationalChristianUniversityJapan = L.featureGroup([
+          L.circleMarker([35.6766078, 139.5408166], {
+            color: InternationalChristianUniversityJapanColor
+          }).bindPopup('<a href="/entities/InternationalChristianUniversityJapan_147"><h3>International Christian University Japan</h3></a><p>〒181-0015<br />Tokyo, Mitaka, Osawa, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(InternationalChristianUniversityJapan);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="InternationalChristianUniversityJapan.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="InternationalChristianUniversityJapan.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var IntransitToadPressColor = getRandomColor();
+      var style = '.' + 'IntransitToadPress';
+      var IntransitToadPress = L.featureGroup([
+          L.circleMarker([44.035263, -123.097613], {
+            color: IntransitToadPressColor
+          }).bindPopup('<a href="/entities/IntransitToadPress_275"><h3>Intransit / Toad Press</h3></a><p>338 W 22nd Ave<br />Eugene, OR<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(IntransitToadPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="IntransitToadPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="IntransitToadPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var IntrepidColor = getRandomColor();
+      var style = '.' + 'Intrepid';
+      var Intrepid = L.featureGroup([
+          L.circleMarker([42.098603, -79.2373], {
+            color: IntrepidColor
+          }).bindPopup('<a href="/entities/Intrepid_270"><h3>Intrepid</h3></a><p>333 E 5th St<br />New York, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Intrepid);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Intrepid.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Intrepid.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var kennethIrbyColor = getRandomColor();
       var style = '.' + 'kennethIrby';
@@ -1924,6 +2294,13 @@
           L.circleMarker([51.7498095, -1.2593295], {
             color: peterJayColor
           }).bindPopup('<a href="/entities/peterJay_353"><h3>Peter Jay</h3></a><p>1 Littlegate St University of Oxford<br />Oxford, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(peterJay);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="peterJay.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="peterJay.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var JoglarsColor = getRandomColor();
+      var style = '.' + 'Joglars';
+      var Joglars = L.featureGroup([
+          L.circleMarker([41.8410129, -71.397374], {
+            color: JoglarsColor
+          }).bindPopup('<a href="/entities/Joglars_95"><h3>Joglars</h3></a><p>292 Morris Ave<br />Providence, RI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Joglars);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Joglars.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Joglars.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var jasperJohnsColor = getRandomColor();
       var style = '.' + 'jasperJohns';
@@ -2197,6 +2574,13 @@
             color: allenKrebsColor
           }).bindPopup('<a href="/entities/allenKrebs_339"><h3>Allen Krebs</h3></a><p>20 E 14th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(allenKrebs);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="allenKrebs.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="allenKrebs.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var KulchurColor = getRandomColor();
+      var style = '.' + 'Kulchur';
+      var Kulchur = L.featureGroup([
+          L.circleMarker([40.775302, -73.9612114], {
+            color: KulchurColor
+          }).bindPopup('<a href="/entities/Kulchur_229"><h3>Kulchur</h3></a><p>888 Park Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Kulchur);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Kulchur.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Kulchur.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var stanleyKunitzColor = getRandomColor();
       var style = '.' + 'stanleyKunitz';
       var stanleyKunitz = L.featureGroup([
@@ -2227,6 +2611,13 @@
             color: joanneKygerColor
           }).bindPopup('<a href="/entities/joanneKyger_314"><h3>Joanne Kyger</h3></a><p>36 Greene St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(joanneKyger);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="joanneKyger.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="joanneKyger.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var LaceReviewColor = getRandomColor();
+      var style = '.' + 'LaceReview';
+      var LaceReview = L.featureGroup([
+          L.circleMarker([40.7661173, -74.1895842], {
+            color: LaceReviewColor
+          }).bindPopup('<a href="/entities/LaceReview_593"><h3>Lace Review</h3></a><p>280 N 12th St<br />Newark, NJ<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(LaceReview);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="LaceReview.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="LaceReview.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var philipLamantiaColor = getRandomColor();
       var style = '.' + 'philipLamantia';
       var philipLamantia = L.featureGroup([
@@ -2250,6 +2641,13 @@
           L.circleMarker([51.491316, -0.1416504], {
             color: angelaLangfieldColor
           }).bindPopup('<a href="/entities/angelaLangfield_285"><h3>Angela Langfield</h3></a><p>5A Warwick Square Pimlico<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(angelaLangfield);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="angelaLangfield.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="angelaLangfield.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var LanghamClinicColor = getRandomColor();
+      var style = '.' + 'LanghamClinic';
+      var LanghamClinic = L.featureGroup([
+          L.circleMarker([51.5177712, -0.1478526], {
+            color: LanghamClinicColor
+          }).bindPopup('<a href="/entities/LanghamClinic_59"><h3>Langham Clinic</h3></a><p>37 Queen Anne St Marylebone<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(LanghamClinic);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="LanghamClinic.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="LanghamClinic.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var gerritLansingColor = getRandomColor();
       var style = '.' + 'gerritLansing';
@@ -2354,6 +2752,13 @@
             color: frankLimaColor
           }).bindPopup('<a href="/entities/frankLima_304"><h3>Frank Lima</h3></a><p>57 2nd Ave #71<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(frankLima);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="frankLima.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="frankLima.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var LinesColor = getRandomColor();
+      var style = '.' + 'Lines';
+      var Lines = L.featureGroup([
+          L.circleMarker([40.751458, -73.969513], {
+            color: LinesColor
+          }).bindPopup('<a href="/entities/Lines_286"><h3>Lines</h3></a><p>321 E 45th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Lines);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Lines.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Lines.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var martinLinkColor = getRandomColor();
       var style = '.' + 'martinLink';
       var martinLink = L.featureGroup([
@@ -2370,6 +2775,23 @@
           L.circleMarker([41.900625, -87.628333], {
             color: louLipsitzColor
           }).bindPopup('<a href="/entities/louLipsitz_442"><h3>Lou Lipsitz</h3></a><p>1019 N State St<br />Chicago, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(louLipsitz);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="louLipsitz.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="louLipsitz.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var ListenerColor = getRandomColor();
+      var style = '.' + 'Listener';
+      var Listener = L.featureGroup([
+          L.circleMarker([51.5204293, -0.1517219], {
+            color: ListenerColor
+          }).bindPopup('<a href="/entities/Listener_283"><h3>Listener</h3></a><p>35 Marylebone High St Marylebone<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Listener);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Listener.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Listener.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var LocationPressColor = getRandomColor();
+      var style = '.' + 'LocationPress';
+      var LocationPress = L.featureGroup([
+          L.circleMarker([53.7442268, -2.5000809], {
+            color: LocationPressColor
+          }).bindPopup('<a href="/entities/LocationPress_362"><h3>Location Press</h3></a><p>4 Hornby Ct<br />Blackburn, Blackburn with Darwen, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(LocationPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="LocationPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="LocationPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([53.8186616, -1.5626482], {
+            color: LocationPressColor
+          }).bindPopup('<a href="/entities/LocationPress_362"><h3>Location Press</h3></a><p>Flat A, Grosvenor Court, 3 Grosvenor Rd<br />Leeds, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(LocationPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="LocationPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="LocationPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var ronLoewinsohnColor = getRandomColor();
       var style = '.' + 'ronLoewinsohn';
@@ -2394,6 +2816,20 @@
           L.circleMarker([42.6153453, -77.4024853], {
             color: antonLongColor
           }).bindPopup('<a href="/entities/antonLong_299"><h3>Anton Long</h3></a><p>Route 1<br />Naples, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(antonLong);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="antonLong.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="antonLong.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var LongHairColor = getRandomColor();
+      var style = '.' + 'LongHair';
+      var LongHair = L.featureGroup([
+          L.circleMarker([51.5198084, -0.1404187], {
+            color: LongHairColor
+          }).bindPopup('<a href="/entities/LongHair_273"><h3>Long Hair</h3></a><p>Flat 8, 15 Hanson St Fitzrovia<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(LongHair);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="LongHair.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="LongHair.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var LonghairPhotographyColor = getRandomColor();
+      var style = '.' + 'LonghairPhotography';
+      var LonghairPhotography = L.featureGroup([
+          L.circleMarker([37.9060368, -122.5449763], {
+            color: LonghairPhotographyColor
+          }).bindPopup('<a href="/entities/LonghairPhotography_406"><h3>Longhair Photography</h3></a><p><br />Mill Valley, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(LonghairPhotography);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="LonghairPhotography.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="LonghairPhotography.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var timLongvilleColor = getRandomColor();
       var style = '.' + 'timLongville';
@@ -2425,6 +2861,13 @@
           L.circleMarker([51.5695475, -0.1880283], {
             color: tomLowensteinColor
           }).bindPopup('<a href="/entities/tomLowenstein_289"><h3>Tom Lowenstein</h3></a><p>1 Park Ave<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tomLowenstein);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tomLowenstein.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tomLowenstein.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var LuganoReviewColor = getRandomColor();
+      var style = '.' + 'LuganoReview';
+      var LuganoReview = L.featureGroup([
+          L.circleMarker([45.9989046, 8.9453621], {
+            color: LuganoReviewColor
+          }).bindPopup('<a href="/entities/LuganoReview_291"><h3>Lugano Review</h3></a><p>Via Clemente Maraini 17A<br />Lugano, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(LuganoReview);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="LuganoReview.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="LuganoReview.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var shelleyLustigColor = getRandomColor();
       var style = '.' + 'shelleyLustig';
@@ -2516,6 +2959,13 @@
             color: pierreMartoryColor
           }).bindPopup('<a href="/entities/pierreMartory_395"><h3>Pierre Martory</h3></a><p>25 Rue Charles V<br />Paris, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(pierreMartory);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="pierreMartory.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="pierreMartory.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var MarylandInstituteCollegeOfArtColor = getRandomColor();
+      var style = '.' + 'MarylandInstituteCollegeOfArt';
+      var MarylandInstituteCollegeOfArt = L.featureGroup([
+          L.circleMarker([39.307555, -76.621634], {
+            color: MarylandInstituteCollegeOfArtColor
+          }).bindPopup('<a href="/entities/MarylandInstituteCollegeOfArt_188"><h3>Maryland Institute College of Art</h3></a><p>1300 W Mt Royal Ave<br />Baltimore, MD<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(MarylandInstituteCollegeOfArt);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="MarylandInstituteCollegeOfArt.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="MarylandInstituteCollegeOfArt.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var tomMaschlerColor = getRandomColor();
       var style = '.' + 'tomMaschler';
       var tomMaschler = L.featureGroup([
@@ -2529,6 +2979,13 @@
           L.circleMarker([48.8540319, 2.3233058], {
             color: harryMathewsColor
           }).bindPopup('<a href="/entities/harryMathews_211"><h3>Harry Mathews</h3></a><p>35 Rue de Varenne<br />Paris, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(harryMathews);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="harryMathews.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="harryMathews.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var MatterColor = getRandomColor();
+      var style = '.' + 'Matter';
+      var Matter = L.featureGroup([
+          L.circleMarker([42.0224313, -73.9065313], {
+            color: MatterColor
+          }).bindPopup('<a href="/entities/Matter_312"><h3>Matter</h3></a><p>Bard College, 30 Campus Rd<br />Annandale-on-Hudson, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Matter);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Matter.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Matter.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var bernadetteMayerColor = getRandomColor();
       var style = '.' + 'bernadetteMayer';
@@ -2786,6 +3243,20 @@
             color: carlMorseColor
           }).bindPopup('<a href="/entities/carlMorse_391"><h3>Carl Morse</h3></a><p>241 E 81st St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(carlMorse);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="carlMorse.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="carlMorse.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var MotherColor = getRandomColor();
+      var style = '.' + 'Mother';
+      var Mother = L.featureGroup([
+          L.circleMarker([44.4545784, -93.165487], {
+            color: MotherColor
+          }).bindPopup('<a href="/entities/Mother_370"><h3>Mother</h3></a><p>PO Box 286<br />Northfield, MN<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Mother);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Mother.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Mother.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([40.731867, -73.983213], {
+            color: MotherColor
+          }).bindPopup('<a href="/entities/Mother_370"><h3>Mother</h3></a><p>PO Box 94, Stuyvesant Station<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Mother);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Mother.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Mother.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var MotherPressColor = getRandomColor();
+      var style = '.' + 'MotherPress';
+      var MotherPress = L.featureGroup([
+      ]);
       var ericMottramColor = getRandomColor();
       var style = '.' + 'ericMottram';
       var ericMottram = L.featureGroup([
@@ -2804,12 +3275,54 @@
       var style = '.' + 'johnBernardMyers';
       var johnBernardMyers = L.featureGroup([
       ]);
+      var NadadaColor = getRandomColor();
+      var style = '.' + 'Nadada';
+      var Nadada = L.featureGroup([
+          L.circleMarker([40.655888, -73.923576], {
+            color: NadadaColor
+          }).bindPopup('<a href="/entities/Nadada_398"><h3>Nadada</h3></a><p>PO Box 384, Lenox Hill Station<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Nadada);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Nadada.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Nadada.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var NationalCouncilOfArtsColor = getRandomColor();
+      var style = '.' + 'NationalCouncilOfArts';
+      var NationalCouncilOfArts = L.featureGroup([
+          L.circleMarker([38.898056, -77.043693], {
+            color: NationalCouncilOfArtsColor
+          }).bindPopup('<a href="/entities/NationalCouncilOfArts_331"><h3>National Council of Arts</h3></a><p>1900 G St NW<br />Washington, DC, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(NationalCouncilOfArts);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="NationalCouncilOfArts.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="NationalCouncilOfArts.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var NemperorArtistsColor = getRandomColor();
+      var style = '.' + 'NemperorArtists';
+      var NemperorArtists = L.featureGroup([
+          L.circleMarker([40.7571205, -73.9864116], {
+            color: NemperorArtistsColor
+          }).bindPopup('<a href="/entities/NemperorArtists_122"><h3>Nemperor Artists</h3></a><p>1501 Broadway<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(NemperorArtists);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="NemperorArtists.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="NemperorArtists.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var peterNevraumontColor = getRandomColor();
       var style = '.' + 'peterNevraumont';
       var peterNevraumont = L.featureGroup([
           L.circleMarker([40.728808, -73.97828], {
             color: peterNevraumontColor
           }).bindPopup('<a href="/entities/peterNevraumont_400"><h3>Peter Nevraumont</h3></a><p>605 E 13th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(peterNevraumont);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="peterNevraumont.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="peterNevraumont.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var NewMeasureColor = getRandomColor();
+      var style = '.' + 'NewMeasure';
+      var NewMeasure = L.featureGroup([
+          L.circleMarker([51.7498095, -1.2593295], {
+            color: NewMeasureColor
+          }).bindPopup('<a href="/entities/NewMeasure_352"><h3>New Measure</h3></a><p>1 Littlegate St University of Oxford<br />Oxford, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(NewMeasure);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="NewMeasure.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="NewMeasure.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var NewYorkTimesColor = getRandomColor();
+      var style = '.' + 'NewYorkTimes';
+      var NewYorkTimes = L.featureGroup([
+          L.circleMarker([40.7574713, -73.9877319], {
+            color: NewYorkTimesColor
+          }).bindPopup('<a href="/entities/NewYorkTimes_591"><h3>New York Times</h3></a><p>229 W 43rd St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(NewYorkTimes);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="NewYorkTimes.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="NewYorkTimes.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var NewYorkerColor = getRandomColor();
+      var style = '.' + 'NewYorker';
+      var NewYorker = L.featureGroup([
+          L.circleMarker([40.7549127, -73.9816884], {
+            color: NewYorkerColor
+          }).bindPopup('<a href="/entities/NewYorker_402"><h3>New Yorker</h3></a><p>25 W 43rd St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(NewYorker);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="NewYorker.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="NewYorker.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var juliaNewmanColor = getRandomColor();
       var style = '.' + 'juliaNewman';
@@ -2956,6 +3469,13 @@
             color: frankOHaraColor
           }).bindPopup('<a href="/entities/frankOHara_410"><h3>Frank O’Hara</h3></a><p>Museum of Modern Art, 11 W 53rd St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(frankOHara);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="frankOHara.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="frankOHara.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var PacificHighRecordingColor = getRandomColor();
+      var style = '.' + 'PacificHighRecording';
+      var PacificHighRecording = L.featureGroup([
+          L.circleMarker([37.77262, -122.420437], {
+            color: PacificHighRecordingColor
+          }).bindPopup('<a href="/entities/PacificHighRecording_446"><h3>Pacific High Recording</h3></a><p>60 Brady St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PacificHighRecording);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PacificHighRecording.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PacificHighRecording.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var evePackerColor = getRandomColor();
       var style = '.' + 'evePacker';
       var evePacker = L.featureGroup([
@@ -3012,6 +3532,13 @@
             color: anitaPandolfiColor
           }).bindPopup('<a href="/entities/anitaPandolfi_443"><h3>Anita Pandolfi</h3></a><p>1611 183rd St<br />Homewood, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(anitaPandolfi);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="anitaPandolfi.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="anitaPandolfi.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var ParisReviewColor = getRandomColor();
+      var style = '.' + 'ParisReview';
+      var ParisReview = L.featureGroup([
+          L.circleMarker([48.8504581, 2.3373432], {
+            color: ParisReviewColor
+          }).bindPopup('<a href="/entities/ParisReview_424"><h3>Paris Review</h3></a><p>17 Rue de Tournon<br />Paris, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ParisReview);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ParisReview.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ParisReview.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var thomasParkinsonColor = getRandomColor();
       var style = '.' + 'thomasParkinson';
       var thomasParkinson = L.featureGroup([
@@ -3022,6 +3549,20 @@
           L.circleMarker([46.5124156, 6.6290276], {
             color: oliviaPaschkoffColor
           }).bindPopup('<a href="/entities/oliviaPaschkoff_433"><h3>Olivia Paschkoff</h3></a><p>Chemin de la Joliette 1<br />Lausanne, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(oliviaPaschkoff);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="oliviaPaschkoff.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="oliviaPaschkoff.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PeaceEyeBookshopColor = getRandomColor();
+      var style = '.' + 'PeaceEyeBookshop';
+      var PeaceEyeBookshop = L.featureGroup([
+          L.circleMarker([40.7261696, -73.978295], {
+            color: PeaceEyeBookshopColor
+          }).bindPopup('<a href="/entities/PeaceEyeBookshop_460"><h3>Peace Eye Bookshop</h3></a><p>383 E 10th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PeaceEyeBookshop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PeaceEyeBookshop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PeaceEyeBookshop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PeaceNewsColor = getRandomColor();
+      var style = '.' + 'PeaceNews';
+      var PeaceNews = L.featureGroup([
+          L.circleMarker([51.5312338, -0.1211143], {
+            color: PeaceNewsColor
+          }).bindPopup('<a href="/entities/PeaceNews_69"><h3>Peace News</h3></a><p>5 Caledonian Rd<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PeaceNews);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PeaceNews.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PeaceNews.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var simonPerchikColor = getRandomColor();
       var style = '.' + 'simonPerchik';
@@ -3080,6 +3621,13 @@
           L.circleMarker([50.7374865, -3.5220642], {
             color: jimPhilipColor
           }).bindPopup('<a href="/entities/jimPhilip_421"><h3>Jim Philip</h3></a><p>Springbank, Beech Ave<br />Exeter, Devon, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jimPhilip);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jimPhilip.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jimPhilip.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PhoenixBookShopColor = getRandomColor();
+      var style = '.' + 'PhoenixBookShop';
+      var PhoenixBookShop = L.featureGroup([
+          L.circleMarker([40.7313345, -74.001914], {
+            color: PhoenixBookShopColor
+          }).bindPopup('<a href="/entities/PhoenixBookShop_431"><h3>Phoenix Book Shop</h3></a><p>18 Cornelia St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PhoenixBookShop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PhoenixBookShop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PhoenixBookShop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var pascalPiaColor = getRandomColor();
       var style = '.' + 'pascalPia';
@@ -3147,6 +3695,55 @@
             color: charlesPlymellColor
           }).bindPopup('<a href="/entities/charlesPlymell_438"><h3>Charles Plymell</h3></a><p>261 Columbus Ave<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(charlesPlymell);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="charlesPlymell.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="charlesPlymell.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var PoetmeatColor = getRandomColor();
+      var style = '.' + 'Poetmeat';
+      var Poetmeat = L.featureGroup([
+          L.circleMarker([53.7520075, -2.504108], {
+            color: PoetmeatColor
+          }).bindPopup('<a href="/entities/Poetmeat_426"><h3>Poetmeat</h3></a><p>11 Clematis St<br />Blackburn, Blackburn with Darwen, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Poetmeat);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Poetmeat.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Poetmeat.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PoetryColor = getRandomColor();
+      var style = '.' + 'Poetry';
+      var Poetry = L.featureGroup([
+          L.circleMarker([41.900625, -87.628333], {
+            color: PoetryColor
+          }).bindPopup('<a href="/entities/Poetry_441"><h3>Poetry</h3></a><p>1019 N State St<br />Chicago, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Poetry);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Poetry.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Poetry.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PoetryCenterSanFranciscoStateCollegeColor = getRandomColor();
+      var style = '.' + 'PoetryCenterSanFranciscoStateCollege';
+      var PoetryCenterSanFranciscoStateCollege = L.featureGroup([
+          L.circleMarker([37.7219699, -122.4794032], {
+            color: PoetryCenterSanFranciscoStateCollegeColor
+          }).bindPopup('<a href="/entities/PoetryCenterSanFranciscoStateCollege_447"><h3>Poetry Center, San Francisco State College</h3></a><p>1600 Holloway Ave<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PoetryCenterSanFranciscoStateCollege);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PoetryCenterSanFranciscoStateCollege.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PoetryCenterSanFranciscoStateCollege.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PoetryCenterYmhaYwhaColor = getRandomColor();
+      var style = '.' + 'PoetryCenterYmhaYwha';
+      var PoetryCenterYmhaYwha = L.featureGroup([
+          L.circleMarker([40.7830623, -73.9526804], {
+            color: PoetryCenterYmhaYwhaColor
+          }).bindPopup('<a href="/entities/PoetryCenterYmhaYwha_579"><h3>Poetry Center, YMHA, YWHA</h3></a><p>1395 Lexington Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PoetryCenterYmhaYwha);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PoetryCenterYmhaYwha.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PoetryCenterYmhaYwha.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PoetryReviewColor = getRandomColor();
+      var style = '.' + 'PoetryReview';
+      var PoetryReview = L.featureGroup([
+          L.circleMarker([27.9474881, -82.4671717], {
+            color: PoetryReviewColor
+          }).bindPopup('<a href="/entities/PoetryReview_526"><h3>Poetry Review</h3></a><p>University of Tampa<br />Tampa, FL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PoetryReview);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PoetryReview.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PoetryReview.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PoetsPressColor = getRandomColor();
+      var style = '.' + 'PoetsPress';
+      var PoetsPress = L.featureGroup([
+          L.circleMarker([41.7748155, -74.2982059], {
+            color: PoetsPressColor
+          }).bindPopup('<a href="/entities/PoetsPress_149"><h3>Poets Press</h3></a><p>RR1 Box 427<br />Kerhonkson, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(PoetsPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="PoetsPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="PoetsPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var PogamogganColor = getRandomColor();
+      var style = '.' + 'Pogamoggan';
+      var Pogamoggan = L.featureGroup([
+          L.circleMarker([40.637544, -73.956918], {
+            color: PogamogganColor
+          }).bindPopup('<a href="/entities/Pogamoggan_429"><h3>Pogamoggan</h3></a><p>600 E 22nd St<br />Brooklyn, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Pogamoggan);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Pogamoggan.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Pogamoggan.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var billPressonColor = getRandomColor();
       var style = '.' + 'billPresson';
       var billPresson = L.featureGroup([
@@ -3167,6 +3764,13 @@
             color: PuccettiColor
           }).bindPopup('<a href="/entities/Puccetti_422"><h3>Puccetti</h3></a><p>3260 N Lake Shore Dr<br />Chicago, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Puccetti);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Puccetti.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Puccetti.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var QuarterlyReviewOfLiteratureColor = getRandomColor();
+      var style = '.' + 'QuarterlyReviewOfLiterature';
+      var QuarterlyReviewOfLiterature = L.featureGroup([
+          L.circleMarker([42.0128, -73.9082], {
+            color: QuarterlyReviewOfLiteratureColor
+          }).bindPopup('<a href="/entities/QuarterlyReviewOfLiterature_450"><h3>Quarterly Review of Literature</h3></a><p>PO Box 287<br />Annandale-on-Hudson, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(QuarterlyReviewOfLiterature);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="QuarterlyReviewOfLiterature.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="QuarterlyReviewOfLiterature.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var nicoleRabetaudColor = getRandomColor();
       var style = '.' + 'nicoleRabetaud';
       var nicoleRabetaud = L.featureGroup([
@@ -3180,6 +3784,16 @@
           L.circleMarker([44.921636, -93.291744], {
             color: carlRakosiColor
           }).bindPopup('<a href="/entities/carlRakosi_458"><h3>Carl Rakosi</h3></a><p>4451 Colfax Ave S<br />Minneapolis, MN<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(carlRakosi);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="carlRakosi.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="carlRakosi.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var RandomHouseColor = getRandomColor();
+      var style = '.' + 'RandomHouse';
+      var RandomHouse = L.featureGroup([
+          L.circleMarker([40.758134, -73.9751767], {
+            color: RandomHouseColor
+          }).bindPopup('<a href="/entities/RandomHouse_475"><h3>Random House</h3></a><p>457 Madison Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(RandomHouse);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="RandomHouse.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="RandomHouse.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([40.7558142, -73.9707189], {
+            color: RandomHouseColor
+          }).bindPopup('<a href="/entities/RandomHouse_475"><h3>Random House</h3></a><p>201 E 50th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(RandomHouse);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="RandomHouse.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="RandomHouse.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var tomRaworthColor = getRandomColor();
       var style = '.' + 'tomRaworth';
@@ -3242,6 +3856,20 @@
             color: karelReiszColor
           }).bindPopup('<a href="/entities/karelReisz_335"><h3>Karel Reisz</h3></a><p>15 Chalcot Gardens<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(karelReisz);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="karelReisz.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="karelReisz.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var ResiduColor = getRandomColor();
+      var style = '.' + 'Residu';
+      var Residu = L.featureGroup([
+          L.circleMarker([51.4584946, -0.2058168], {
+            color: ResiduColor
+          }).bindPopup('<a href="/entities/Residu_454"><h3>Residu</h3></a><p>6 St Stephen’s Gardens<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Residu);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Residu.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Residu.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var ResuscitatorColor = getRandomColor();
+      var style = '.' + 'Resuscitator';
+      var Resuscitator = L.featureGroup([
+          L.circleMarker([51.3097366, -2.4952756], {
+            color: ResuscitatorColor
+          }).bindPopup('<a href="/entities/Resuscitator_344"><h3>Resuscitator</h3></a><p>35 Gregorys Tyning Paulton<br />Bristol, Bath and North East Somerset, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Resuscitator);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Resuscitator.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Resuscitator.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var albertReneRicardColor = getRandomColor();
       var style = '.' + 'albertReneRicard';
       var albertReneRicard = L.featureGroup([
@@ -3270,12 +3898,36 @@
             color: williamRiveraColor
           }).bindPopup('<a href="/entities/williamRivera_464"><h3>William Rivera</h3></a><p>52 Rue Vaneau<br />Paris, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(williamRivera);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="williamRivera.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="williamRivera.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var RobertsRecordsColor = getRandomColor();
+      var style = '.' + 'RobertsRecords';
+      var RobertsRecords = L.featureGroup([
+          L.circleMarker([40.7269536, -73.9828337], {
+            color: RobertsRecordsColor
+          }).bindPopup('<a href="/entities/RobertsRecords_474"><h3>Roberts Records</h3></a><p>133 Avenue A<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(RobertsRecords);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="RobertsRecords.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="RobertsRecords.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var andrewCRobinsonColor = getRandomColor();
       var style = '.' + 'andrewCRobinson';
       var andrewCRobinson = L.featureGroup([
           L.circleMarker([51.4215688, -2.5587321], {
             color: andrewCRobinsonColor
           }).bindPopup('<a href="/entities/andrewCRobinson_467"><h3>Andrew C. Robinson</h3></a><p>38 Kinsale Rd<br />Bristol, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(andrewCRobinson);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="andrewCRobinson.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="andrewCRobinson.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var RockefellerFoundationColor = getRandomColor();
+      var style = '.' + 'RockefellerFoundation';
+      var RockefellerFoundation = L.featureGroup([
+          L.circleMarker([40.759532, -73.9795414], {
+            color: RockefellerFoundationColor
+          }).bindPopup('<a href="/entities/RockefellerFoundation_191"><h3>Rockefeller Foundation</h3></a><p>111 W 50th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(RockefellerFoundation);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="RockefellerFoundation.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="RockefellerFoundation.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var RollingStoneColor = getRandomColor();
+      var style = '.' + 'RollingStone';
+      var RollingStone = L.featureGroup([
+          L.circleMarker([37.7739641, -122.4021172], {
+            color: RollingStoneColor
+          }).bindPopup('<a href="/entities/RollingStone_478"><h3>Rolling Stone</h3></a><p>746 Brannan St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(RollingStone);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="RollingStone.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="RollingStone.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([37.779723, -122.393414], {
+            color: RollingStoneColor
+          }).bindPopup('<a href="/entities/RollingStone_478"><h3>Rolling Stone</h3></a><p>625 3rd St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(RollingStone);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="RollingStone.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="RollingStone.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var luciaRoseColor = getRandomColor();
       var style = '.' + 'luciaRose';
@@ -3501,6 +4153,20 @@
             color: alanSenaukeColor
           }).bindPopup('<a href="/entities/alanSenauke_509"><h3>Alan Senauke</h3></a><p>135 Longfellow Rd<br />Great Neck, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(alanSenauke);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="alanSenauke.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="alanSenauke.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var SerendipityBookshopColor = getRandomColor();
+      var style = '.' + 'SerendipityBookshop';
+      var SerendipityBookshop = L.featureGroup([
+          L.circleMarker([37.8749702, -122.2689654], {
+            color: SerendipityBookshopColor
+          }).bindPopup('<a href="/entities/SerendipityBookshop_267"><h3>Serendipity Bookshop</h3></a><p>1790 Shattuck Ave<br />Berkeley, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(SerendipityBookshop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="SerendipityBookshop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="SerendipityBookshop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var SetColor = getRandomColor();
+      var style = '.' + 'Set';
+      var Set = L.featureGroup([
+          L.circleMarker([42.612666, -70.664379], {
+            color: SetColor
+          }).bindPopup('<a href="/entities/Set_486"><h3>Set</h3></a><p>92 Main St<br />Gloucester, MA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Set);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Set.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Set.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var paulShalnyColor = getRandomColor();
       var style = '.' + 'paulShalny';
       var paulShalny = L.featureGroup([
@@ -3548,6 +4214,13 @@
           L.circleMarker([40.6731517, -73.9736846], {
             color: michaelSilvertonColor
           }).bindPopup('<a href="/entities/michaelSilverton_512"><h3>Michael Silverton</h3></a><p>90 8th Ave<br />Brooklyn, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(michaelSilverton);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="michaelSilverton.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="michaelSilverton.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var SimonAndSchusterColor = getRandomColor();
+      var style = '.' + 'SimonAndSchuster';
+      var SimonAndSchuster = L.featureGroup([
+          L.circleMarker([40.7590054, -73.9773439], {
+            color: SimonAndSchusterColor
+          }).bindPopup('<a href="/entities/SimonAndSchuster_483"><h3>Simon and Schuster</h3></a><p>630 5th Ave Rockefeller Center<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(SimonAndSchuster);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="SimonAndSchuster.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="SimonAndSchuster.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var johnSinclairColor = getRandomColor();
       var style = '.' + 'johnSinclair';
@@ -3597,6 +4270,13 @@
           L.circleMarker([40.7269451, -73.9831168], {
             color: gilbertSorrentinoColor
           }).bindPopup('<a href="/entities/gilbertSorrentino_490"><h3>Gilbert Sorrentino</h3></a><p>131 Avenue A<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(gilbertSorrentino);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="gilbertSorrentino.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="gilbertSorrentino.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var SperoColor = getRandomColor();
+      var style = '.' + 'Spero';
+      var Spero = L.featureGroup([
+          L.circleMarker([42.4045838, -83.1351679], {
+            color: SperoColor
+          }).bindPopup('<a href="/entities/Spero_488"><h3>Spero</h3></a><p>4821 John C Lodge Service Dr<br />Detroit, MI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Spero);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Spero.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Spero.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var hardieStMartinColor = getRandomColor();
       var style = '.' + 'hardieStMartin';
@@ -3684,6 +4364,13 @@
             color: SunRaColor
           }).bindPopup('<a href="/entities/SunRa_184"><h3>Sun Ra</h3></a><p>48 E 3rd St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(SunRa);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="SunRa.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="SunRa.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var SynapseColor = getRandomColor();
+      var style = '.' + 'Synapse';
+      var Synapse = L.featureGroup([
+          L.circleMarker([37.876438, -122.273891], {
+            color: SynapseColor
+          }).bindPopup('<a href="/entities/Synapse_234"><h3>Synapse</h3></a><p>1636 Martin Luther King Jr Way<br />Berkeley, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Synapse);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Synapse.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Synapse.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var johnTempleColor = getRandomColor();
       var style = '.' + 'johnTemple';
       var johnTemple = L.featureGroup([
@@ -3694,12 +4381,44 @@
             color: johnTempleColor
           }).bindPopup('<a href="/entities/johnTemple_524"><h3>John Temple</h3></a><p>401 Edith Blvd SE<br />Albuquerque, NM<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(johnTemple);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="johnTemple.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="johnTemple.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var ThalocColor = getRandomColor();
+      var style = '.' + 'Thaloc';
+      var Thaloc = L.featureGroup([
+          L.circleMarker([53.8129459, -1.5653199], {
+            color: ThalocColor
+          }).bindPopup('<a href="/entities/Thaloc_361"><h3>Thaloc</h3></a><p>22 Brudenell Rd<br />Leeds, West Yorkshire, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Thaloc);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Thaloc.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Thaloc.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var TheSixtiesColor = getRandomColor();
+      var style = '.' + 'TheSixties';
+      var TheSixties = L.featureGroup([
+          L.circleMarker([45.0113787, -96.1932176], {
+            color: TheSixtiesColor
+          }).bindPopup('<a href="/entities/TheSixties_42"><h3>The Sixties</h3></a><p>Odin House<br />Madison, MN<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(TheSixties);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="TheSixties.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="TheSixties.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var TheTenthMuseColor = getRandomColor();
+      var style = '.' + 'TheTenthMuse';
+      var TheTenthMuse = L.featureGroup([
+          L.circleMarker([37.755138, -122.398419], {
+            color: TheTenthMuseColor
+          }).bindPopup('<a href="/entities/TheTenthMuse_403"><h3>The Tenth Muse</h3></a><p>983 Wisconsin St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(TheTenthMuse);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="TheTenthMuse.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="TheTenthMuse.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var TheWorldColor = getRandomColor();
+      var style = '.' + 'TheWorld';
+      var TheWorld = L.featureGroup([
+      ]);
       var jackThibeauColor = getRandomColor();
       var style = '.' + 'jackThibeau';
       var jackThibeau = L.featureGroup([
           L.circleMarker([37.79291, -122.4184279], {
             color: jackThibeauColor
           }).bindPopup('<a href="/entities/jackThibeau_533"><h3>Jack Thibeau</h3></a><p>1534 Clay #8<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jackThibeau);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jackThibeau.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jackThibeau.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var ThingsColor = getRandomColor();
+      var style = '.' + 'Things';
+      var Things = L.featureGroup([
+          L.circleMarker([40.802399, -73.968866], {
+            color: ThingsColor
+          }).bindPopup('<a href="/entities/Things_347"><h3>Things</h3></a><p>308 W 107th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Things);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Things.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Things.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var billThomasColor = getRandomColor();
       var style = '.' + 'billThomas';
@@ -3722,12 +4441,26 @@
             color: johnThorpeColor
           }).bindPopup('<a href="/entities/johnThorpe_540"><h3>John Thorpe</h3></a><p>PO Box 271<br />Bolinas, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(johnThorpe);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="johnThorpe.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="johnThorpe.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var TiborDeNagyColor = getRandomColor();
+      var style = '.' + 'TiborDeNagy';
+      var TiborDeNagy = L.featureGroup([
+          L.circleMarker([40.7640557, -73.9756129], {
+            color: TiborDeNagyColor
+          }).bindPopup('<a href="/entities/TiborDeNagy_528"><h3>Tibor de Nagy</h3></a><p>29 W 57th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(TiborDeNagy);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="TiborDeNagy.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="TiborDeNagy.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var jeanTinguelyColor = getRandomColor();
       var style = '.' + 'jeanTinguely';
       var jeanTinguely = L.featureGroup([
           L.circleMarker([48.4749679, 2.497111], {
             color: jeanTinguelyColor
           }).bindPopup('<a href="/entities/jeanTinguely_538"><h3>Jean Tinguely</h3></a><p>Auberge du Cheval Blanc<br />Soisy-sur-École, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jeanTinguely);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jeanTinguely.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jeanTinguely.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var TishColor = getRandomColor();
+      var style = '.' + 'Tish';
+      var Tish = L.featureGroup([
+          L.circleMarker([49.2384223, -123.1629901], {
+            color: TishColor
+          }).bindPopup('<a href="/entities/Tish_525"><h3>Tish</h3></a><p>2527 W 37th Ave<br />Vancouver, BC<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Tish);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Tish.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Tish.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var charlesTomlinsonColor = getRandomColor();
       var style = '.' + 'charlesTomlinson';
@@ -3766,12 +4499,33 @@
             color: tonyTowleColor
           }).bindPopup('<a href="/entities/tonyTowle_534"><h3>Tony Towle</h3></a><p>100 Sullivan St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tonyTowle);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tonyTowle.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tonyTowle.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var TriQuarterlyColor = getRandomColor();
+      var style = '.' + 'TriQuarterly';
+      var TriQuarterly = L.featureGroup([
+          L.circleMarker([42.057663, -87.6757803], {
+            color: TriQuarterlyColor
+          }).bindPopup('<a href="/entities/TriQuarterly_535"><h3>Tri-quarterly</h3></a><p>University Hall 101, Northwestern University<br />Evanston, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(TriQuarterly);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="TriQuarterly.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="TriQuarterly.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var TrigramPressColor = getRandomColor();
+      var style = '.' + 'TrigramPress';
+      var TrigramPress = L.featureGroup([
+          L.circleMarker([51.5453142, -0.1305815], {
+            color: TrigramPressColor
+          }).bindPopup('<a href="/entities/TrigramPress_73"><h3>Trigram Press</h3></a><p>28 Camden Square<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(TrigramPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="TrigramPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="TrigramPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var gaelTurnbullColor = getRandomColor();
       var style = '.' + 'gaelTurnbull';
       var gaelTurnbull = L.featureGroup([
           L.circleMarker([52.108, -2.325], {
             color: gaelTurnbullColor
           }).bindPopup('<a href="/entities/gaelTurnbull_523"><h3>Gael Turnbull</h3></a><p>Bridge House, Stiffords Bridge<br />Cradley, Malvern, Worcestershire, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(gaelTurnbull);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="gaelTurnbull.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="gaelTurnbull.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var TurretBookshopColor = getRandomColor();
+      var style = '.' + 'TurretBookshop';
+      var TurretBookshop = L.featureGroup([
+          L.circleMarker([51.5025436, -0.1927229], {
+            color: TurretBookshopColor
+          }).bindPopup('<a href="/entities/TurretBookshop_495"><h3>Turret Bookshop</h3></a><p>19 Kensington Church Walk Kensington<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(TurretBookshop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="TurretBookshop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="TurretBookshop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var georgeTyshColor = getRandomColor();
       var style = '.' + 'georgeTysh';
@@ -3786,6 +4540,27 @@
           L.circleMarker([47.5058551, 18.9952697], {
             color: tamasUngvariColor
           }).bindPopup('<a href="/entities/tamasUngvari_541"><h3>Tamas Ungvari</h3></a><p>Istenhegyi út 95<br />Budapest, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tamasUngvari);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tamasUngvari.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tamasUngvari.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var UnicornBookShopColor = getRandomColor();
+      var style = '.' + 'UnicornBookShop';
+      var UnicornBookShop = L.featureGroup([
+          L.circleMarker([34.4128934, -119.8555916], {
+            color: UnicornBookShopColor
+          }).bindPopup('<a href="/entities/UnicornBookShop_386"><h3>Unicorn Book Shop</h3></a><p>905 Embarcadero del Norte Isla Vista<br />Santa Barbara, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(UnicornBookShop);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="UnicornBookShop.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="UnicornBookShop.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var UniversityOfMichiganPressColor = getRandomColor();
+      var style = '.' + 'UniversityOfMichiganPress';
+      var UniversityOfMichiganPress = L.featureGroup([
+          L.circleMarker([42.274467, -83.7353679], {
+            color: UniversityOfMichiganPressColor
+          }).bindPopup('<a href="/entities/UniversityOfMichiganPress_118"><h3>University of Michigan Press</h3></a><p>615 E University Ave<br />Ann Arbor, MI<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(UniversityOfMichiganPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="UniversityOfMichiganPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="UniversityOfMichiganPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var VanguardRecordsColor = getRandomColor();
+      var style = '.' + 'VanguardRecords';
+      var VanguardRecords = L.featureGroup([
+          L.circleMarker([40.7428332, -73.9922321], {
+            color: VanguardRecordsColor
+          }).bindPopup('<a href="/entities/VanguardRecords_105"><h3>Vanguard Records</h3></a><p>71 W 23rd St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(VanguardRecords);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="VanguardRecords.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="VanguardRecords.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var tomVeitchColor = getRandomColor();
       var style = '.' + 'tomVeitch';
@@ -3868,12 +4643,26 @@
             color: tonyWaltersColor
           }).bindPopup('<a href="/entities/tonyWalters_566"><h3>Tony Walters</h3></a><p>6020 S Woodlawn Ave<br />Chicago, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tonyWalters);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tonyWalters.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tonyWalters.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
+      var WarResistersLeagueColor = getRandomColor();
+      var style = '.' + 'WarResistersLeague';
+      var WarResistersLeague = L.featureGroup([
+          L.circleMarker([40.7114436, -74.0067453], {
+            color: WarResistersLeagueColor
+          }).bindPopup('<a href="/entities/WarResistersLeague_367"><h3>War Resisters League</h3></a><p>5 Beekman St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WarResistersLeague);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WarResistersLeague.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WarResistersLeague.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
       var andyWarholColor = getRandomColor();
       var style = '.' + 'andyWarhol';
       var andyWarhol = L.featureGroup([
           L.circleMarker([40.736861, -73.990964], {
             color: andyWarholColor
           }).bindPopup('<a href="/entities/andyWarhol_583"><h3>Andy Warhol</h3></a><p>33 Union Square W<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(andyWarhol);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="andyWarhol.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="andyWarhol.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var WarnerBrosColor = getRandomColor();
+      var style = '.' + 'WarnerBros';
+      var WarnerBros = L.featureGroup([
+          L.circleMarker([34.1498977, -118.3410174], {
+            color: WarnerBrosColor
+          }).bindPopup('<a href="/entities/WarnerBros_127"><h3>Warner Bros.</h3></a><p>4000 Warner Blvd<br />Burbank, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WarnerBros);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WarnerBros.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WarnerBros.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var lewisWarshColor = getRandomColor();
       var style = '.' + 'lewisWarsh';
@@ -3932,6 +4721,13 @@
           L.circleMarker([37.874167, -122.51581], {
             color: lewWelchColor
           }).bindPopup('<a href="/entities/lewWelch_569"><h3>Lew Welch</h3></a><p>52 Buckelew St<br />Sausalito, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(lewWelch);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="lewWelch.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="lewWelch.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var WellsFargoColor = getRandomColor();
+      var style = '.' + 'WellsFargo';
+      var WellsFargo = L.featureGroup([
+          L.circleMarker([37.8684224, -122.2600599], {
+            color: WellsFargoColor
+          }).bindPopup('<a href="/entities/WellsFargo_585"><h3>Wells Fargo</h3></a><p>2460 Bancroft Way<br />Berkeley, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WellsFargo);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WellsFargo.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WellsFargo.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var jannWennerColor = getRandomColor();
       var style = '.' + 'jannWenner';
@@ -4015,6 +4811,26 @@
           L.circleMarker([42.616069, -70.668767], {
             color: johnWienersColor
           }).bindPopup('<a href="/entities/johnWieners_555"><h3>John Wieners</h3></a><p>General Delivery, Riverdale Station<br />Gloucester, MA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(johnWieners);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="johnWieners.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="johnWieners.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var WildDogColor = getRandomColor();
+      var style = '.' + 'WildDog';
+      var WildDog = L.featureGroup([
+          L.circleMarker([40.7607793, -111.8910474], {
+            color: WildDogColor
+          }).bindPopup('<a href="/entities/WildDog_549"><h3>Wild Dog</h3></a><p>PO Box 11094<br />Salt Lake City, UT<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WildDog);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([37.773579, -122.443659], {
+            color: WildDogColor
+          }).bindPopup('<a href="/entities/WildDog_549"><h3>Wild Dog</h3></a><p>1568 Fell St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WildDog);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+          L.circleMarker([37.7682169, -122.4474228], {
+            color: WildDogColor
+          }).bindPopup('<a href="/entities/WildDog_549"><h3>Wild Dog</h3></a><p>39 Downey St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WildDog);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
+      ]);
+      var WildHawthornPressColor = getRandomColor();
+      var style = '.' + 'WildHawthornPress';
+      var WildHawthornPress = L.featureGroup([
+          L.circleMarker([57.9166667, -4.4166667], {
+            color: WildHawthornPressColor
+          }).bindPopup('<a href="/entities/WildHawthornPress_172"><h3>Wild Hawthorn Press</h3></a><p>Gledfield Farmhouse<br />Ardgay Ross-Shire, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WildHawthornPress);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WildHawthornPress.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WildHawthornPress.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var eliWilentzColor = getRandomColor();
       var style = '.' + 'eliWilentz';
@@ -4187,20 +5003,31 @@
         brotherRobert,
         hildy,
         royEllen,
+        AmsPress,
         wardAbbott,
+        AbingtonBookshop,
         samAbrams,
+        AcademyOfAmericanPoets,
         vitoHannibalAcconci,
         davidAdnopoz,
         clarissaAinley,
         davidAinley,
         donaldAllen,
         revMichaelAllen,
+        AlternativePress,
         bruceAndrews,
+        AngelHairBooks,
         alanAnsen,
         davidAntin,
         peterArdery,
         peterArmstrong,
+        ArtNews,
+        ArtAndLiterature,
         johnAshbery,
+        AsphodelBookshop,
+        AtlanticMonthly,
+        AuerhahnPress,
+        AvantGarde,
         margaretAvison,
         gordonBaldwin,
         rogerBarnard,
@@ -4217,12 +5044,16 @@
         billBerkson,
         maryBernstein,
         tedBerrigan,
+        BetterBooks,
         billBissett,
+        BlackSparrowPress,
         paulBlackburn,
         robinBlaser,
+        BlueThumbRecords,
         ettaBlum,
         drNealBlumenfeld,
         robertBly,
+        Bones,
         ebbeBorregaard,
         josephBottone,
         georgeBowering,
@@ -4252,6 +5083,7 @@
         bobCaligy,
         bobCallahan,
         stephenACanada,
+        CapeGoliard,
         ronaldCaplan,
         martinCarey,
         steveCarey,
@@ -4260,11 +5092,13 @@
         elizabethCase,
         cyrilCaster,
         mmeBlaiseCendrars,
+        CenticoreBooks,
         joeCeravolo,
         hankChapin,
         frankCharlton,
         michaelChechik,
         stevieChusman,
+        CityLights,
         johnClark,
         davidCoates,
         arthurCohen,
@@ -4272,6 +5106,7 @@
         mrsMACohn,
         victorColeman,
         jackCollom,
+        ColumbiaPictures,
         gwenConnet,
         bobCook,
         clarkCoolidge,
@@ -4280,22 +5115,29 @@
         cidCorman,
         gregoryCorso,
         jonathanCott,
+        Cow,
         davidSusanCoxhead,
+        CoyoteSJournal,
         leeCrabtree,
         timCraig,
         didiCrane,
         robertCreeley,
+        Creem,
         judsonCrews,
         andrewCrozier,
         daveCunliffe,
         peterDavidson,
         donaldDavie,
         fieldingDawson,
+        DaytonSRecords,
         allenDeLoach,
         billDebes,
         billDeemer,
         leeDejasu,
+        Delta,
         edwinDenby,
+        DesertReview,
+        DesertReviewPress,
         Desmond,
         dianeDiprima,
         marthaDiamond,
@@ -4304,8 +5146,10 @@
         tomDisch,
         williamDodds,
         edwardDorn,
+        DoubledayCo,
         marcelDuchamp,
         louisDudek,
+        Duende,
         richardDuerden,
         haroldDull,
         johnDunbar,
@@ -4314,10 +5158,15 @@
         jMEdelstein,
         karenEdwards,
         robinEichele,
+        EighthStreetBookshop,
         larryEigner,
+        ElectricCircus,
+        Elephant,
+        EleventhFinger,
         kenwardElmslie,
         claytonEshleman,
         paulEvans,
+        EvergreenReview,
         larryFagin,
         harryFainlight,
         ruthFainlight,
@@ -4325,16 +5174,22 @@
         curtisFaville,
         elaineFeinstein,
         dannyFields,
+        FilmexInc,
         ianHamiltonFinlay,
         maxFinstein,
         tamFiofori,
         royFisher,
         jamesFitzsimmons,
+        FolkloreCenter,
+        FollettPublishingCo,
         robertFrancis,
         davidFranks,
         kathleenFraser,
+        FreeUniversityOfNewYork,
+        FrettedInstrumentSchool,
         geraldFreund,
         richFriedman,
+        Fubbalo,
         maxineGadd,
         dickGallup,
         drDavidGerstein,
@@ -4345,6 +5200,7 @@
         johnGiorno,
         danielaGioseffi,
         barbaraGladstone,
+        GnomonPress,
         johnGodfrey,
         geraldAndNancyGoldberg,
         mikeGoldberg,
@@ -4354,7 +5210,9 @@
         larryGoodell,
         chrisGoodey,
         ronGorchov,
+        GothamBookMart,
         pannaGrady,
+        Grassroots,
         paulGreen,
         drReubenGreenberg,
         jonathanGreene,
@@ -4369,6 +5227,8 @@
         barryHall,
         donaldHall,
         ianHamilton,
+        HardwarePoetsOccasional,
+        HarperSMagazine,
         billHarris,
         phyllisMasekHarris,
         robertHarris,
@@ -4378,30 +5238,39 @@
         raoulHausmann,
         rondaHaynes,
         dRHazelton,
+        Head,
         kateHeliczer,
         pieroHeliczer,
+        HenryMSnyderCo,
         jeremyHilton,
         georgeHitchcock,
         abbieHoffman,
         hildegardeHoffmann,
         robertHogg,
         anselmHollo,
+        HoltRinehartWinston,
         lindaHood,
         johnHopkins,
         tomHopkinson,
         litaHornick,
         michaelHorovitz,
+        HouseOfBooksLtd,
         peterHoward,
         bobHowell,
         tedHughes,
         charlesRHulbeck,
         haroldHumes,
+        IndicaBooksAndGallery,
         joanInglis,
+        InternationalChristianUniversityJapan,
+        IntransitToadPress,
+        Intrepid,
         kennethIrby,
         gregIrons,
         johnJames,
         emmettJarrett,
         peterJay,
+        Joglars,
         jasperJohns,
         ronaldJohnson,
         steveJonas,
@@ -4434,12 +5303,15 @@
         lucyKostelanetz,
         bettyKray,
         allenKrebs,
+        Kulchur,
         stanleyKunitz,
         gregKuzma,
         joanneKyger,
+        LaceReview,
         philipLamantia,
         jonLandau,
         angelaLangfield,
+        LanghamClinic,
         gerritLansing,
         kenLash,
         frankLauria,
@@ -4453,15 +5325,21 @@
         billLevy,
         lawrenceLieberman,
         frankLima,
+        Lines,
         martinLink,
         louLipsitz,
+        Listener,
+        LocationPress,
         ronLoewinsohn,
         johnLogan,
         antonLong,
+        LongHair,
+        LonghairPhotography,
         timLongville,
         steveLovi,
         jimLowell,
         tomLowenstein,
+        LuganoReview,
         shelleyLustig,
         steveLynton,
         lewisMacadams,
@@ -4471,8 +5349,10 @@
         daveMarsh,
         johnMartin,
         pierreMartory,
+        MarylandInstituteCollegeOfArt,
         tomMaschler,
         harryMathews,
+        Matter,
         bernadetteMayer,
         johnMaynard,
         missyMaytag,
@@ -4504,10 +5384,18 @@
         edwinMorgan,
         hedleyMorgan,
         carlMorse,
+        Mother,
+        MotherPress,
         ericMottram,
         wendyMulford,
         johnBernardMyers,
+        Nadada,
+        NationalCouncilOfArts,
+        NemperorArtists,
         peterNevraumont,
+        NewMeasure,
+        NewYorkTimes,
+        NewYorker,
         juliaNewman,
         lorineNiedecker,
         nilNil,
@@ -4524,13 +5412,17 @@
         rochelleOwens,
         marianODwyer,
         frankOHara,
+        PacificHighRecording,
         evePacker,
         ronPadgett,
         michaelPalmer,
         michaelPalmer,
         anitaPandolfi,
+        ParisReview,
         thomasParkinson,
         oliviaPaschkoff,
+        PeaceEyeBookshop,
+        PeaceNews,
         simonPerchik,
         johnPerreault,
         jonathanPerry,
@@ -4538,16 +5430,26 @@
         chrisPeterson,
         donaldPhelps,
         jimPhilip,
+        PhoenixBookShop,
         pascalPia,
         tomPickard,
         joePinelli,
         georgePitts,
         georgePlimpton,
         charlesPlymell,
+        Poetmeat,
+        Poetry,
+        PoetryCenterSanFranciscoStateCollege,
+        PoetryCenterYmhaYwha,
+        PoetryReview,
+        PoetsPress,
+        Pogamoggan,
         billPresson,
         Puccetti,
+        QuarterlyReviewOfLiterature,
         nicoleRabetaud,
         carlRakosi,
+        RandomHouse,
         tomRaworth,
         davidRay,
         ellenRay,
@@ -4555,11 +5457,16 @@
         janetRedemann,
         louReed,
         karelReisz,
+        Residu,
+        Resuscitator,
         albertReneRicard,
         danRichter,
         drFrancisRigney,
         williamRivera,
+        RobertsRecords,
         andrewCRobinson,
+        RockefellerFoundation,
+        RollingStone,
         luciaRose,
         davidRosenberg,
         sharonRosenberg,
@@ -4583,12 +5490,15 @@
         jamesSchuyler,
         nickSedgwick,
         alanSenauke,
+        SerendipityBookshop,
+        Set,
         paulShalny,
         davidShapiro,
         Sharkey,
         michaelShayer,
         williamDavidSherman,
         michaelSilverton,
+        SimonAndSchuster,
         johnSinclair,
         joelSloman,
         garySnyder,
@@ -4596,6 +5506,7 @@
         elaineSolow,
         alanSondheim,
         gilbertSorrentino,
+        Spero,
         hardieStMartin,
         johnStaley,
         georgeStanley,
@@ -4607,19 +5518,33 @@
         markStrand,
         peteStuart,
         SunRa,
+        Synapse,
         johnTemple,
+        Thaloc,
+        TheSixties,
+        TheTenthMuse,
+        TheWorld,
         jackThibeau,
+        Things,
         billThomas,
         lorenzoThomas,
         johnThorpe,
+        TiborDeNagy,
         jeanTinguely,
+        Tish,
         charlesTomlinson,
         sotereTorregian,
         terryTowle,
         tonyTowle,
+        TriQuarterly,
+        TrigramPress,
         gaelTurnbull,
+        TurretBookshop,
         georgeTysh,
         tamasUngvari,
+        UnicornBookShop,
+        UniversityOfMichiganPress,
+        VanguardRecords,
         tomVeitch,
         charlieVermont,
         johnVernon,
@@ -4629,7 +5554,9 @@
         paulWallace,
         tomWalsh,
         tonyWalters,
+        WarResistersLeague,
         andyWarhol,
+        WarnerBros,
         lewisWarsh,
         nickWayte,
         johnWeber,
@@ -4637,6 +5564,7 @@
         donaldWeingarten,
         tedWeiss,
         lewWelch,
+        WellsFargo,
         jannWenner,
         dickWertheimer,
         philipWhalen,
@@ -4645,6 +5573,8 @@
         mikeWiater,
         lauranceWieder,
         johnWieners,
+        WildDog,
+        WildHawthornPress,
         eliWilentz,
         tedWilentz,
         jonathanWilliams,

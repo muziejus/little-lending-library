@@ -34,7 +34,7 @@ class App
         when "bay_area"
           @js_bay_area
         else
-          "<!-- could not find JS data to dump here -->"
+          "<script>alert('request for js_dump, but nothing came in?');</script>"
         end
       end
 
