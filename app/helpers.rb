@@ -21,5 +21,13 @@ class App
     #   @js_chart
     # end
 
+    def demo_modal
+      if ENV['RACK_ENV'] == "development"
+        false
+      else
+        true
+      end
+    end
+
   end
 end
