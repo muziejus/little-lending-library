@@ -30,16 +30,6 @@
             color: davidAinleyColor
           }).bindPopup('<a href="/entities/davidAinley_6"><h3>David Ainley</h3></a><p>23 St Mark’s Crescent<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(davidAinley);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="davidAinley.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="davidAinley.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var peterArmstrongColor = getRandomColor();
-      var style = '.' + 'peterArmstrong';
-      var peterArmstrong = L.featureGroup([
-          L.circleMarker([51.4549833, -2.622643], {
-            color: peterArmstrongColor
-          }).bindPopup('<a href="/entities/peterArmstrong_11"><h3>Peter Armstrong</h3></a><p>16 W Mall<br />Bristol, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(peterArmstrong);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="peterArmstrong.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="peterArmstrong.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([51.4578856, -2.6142163], {
-            color: peterArmstrongColor
-          }).bindPopup('<a href="/entities/peterArmstrong_11"><h3>Peter Armstrong</h3></a><p>1 Richmond Park Rd<br />Bristol, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(peterArmstrong);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="peterArmstrong.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="peterArmstrong.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var rogerBarnardColor = getRandomColor();
       var style = '.' + 'rogerBarnard';
       var rogerBarnard = L.featureGroup([
@@ -142,13 +132,6 @@
           L.circleMarker([51.5461794, -0.1852274], {
             color: CapeGoliardColor
           }).bindPopup('<a href="/entities/CapeGoliard_262"><h3>Cape Goliard</h3></a><p>102 Fairhazel Gardens<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(CapeGoliard);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="CapeGoliard.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="CapeGoliard.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var davidCoatesColor = getRandomColor();
-      var style = '.' + 'davidCoates';
-      var davidCoates = L.featureGroup([
-          L.circleMarker([51.7531851, -1.2629014], {
-            color: davidCoatesColor
-          }).bindPopup('<a href="/entities/davidCoates_99"><h3>David Coates</h3></a><p>The Cottage, George Street Mews<br />Oxford, Oxfordshire, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(davidCoates);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="davidCoates.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="davidCoates.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var ColumbiaPicturesColor = getRandomColor();
       var style = '.' + 'ColumbiaPictures';
@@ -374,13 +357,6 @@
             color: johnHopkinsColor
           }).bindPopup('<a href="/entities/johnHopkins_574"><h3>John Hopkins</h3></a><p>115 Queensway<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(johnHopkins);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="johnHopkins.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="johnHopkins.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var tomHopkinsonColor = getRandomColor();
-      var style = '.' + 'tomHopkinson';
-      var tomHopkinson = L.featureGroup([
-          L.circleMarker([51.4760702, -2.6082479], {
-            color: tomHopkinsonColor
-          }).bindPopup('<a href="/entities/tomHopkinson_231"><h3>Tom Hopkinson</h3></a><p>21 Dundonald Rd<br />Bristol, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tomHopkinson);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tomHopkinson.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tomHopkinson.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var michaelHorovitzColor = getRandomColor();
       var style = '.' + 'michaelHorovitz';
       var michaelHorovitz = L.featureGroup([
@@ -426,20 +402,6 @@
           L.circleMarker([51.5203119, -0.1223896], {
             color: IndicaBooksAndGalleryColor
           }).bindPopup('<a href="/entities/IndicaBooksAndGallery_272"><h3>Indica Books and Gallery</h3></a><p>102 Southampton Row<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(IndicaBooksAndGallery);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="IndicaBooksAndGallery.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="IndicaBooksAndGallery.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var johnJamesColor = getRandomColor();
-      var style = '.' + 'johnJames';
-      var johnJames = L.featureGroup([
-          L.circleMarker([51.3097366, -2.4952756], {
-            color: johnJamesColor
-          }).bindPopup('<a href="/entities/johnJames_345"><h3>John James</h3></a><p>35 Gregorys Tyning Paulton<br />Bristol, Bath and North East Somerset, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(johnJames);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="johnJames.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="johnJames.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var peterJayColor = getRandomColor();
-      var style = '.' + 'peterJay';
-      var peterJay = L.featureGroup([
-          L.circleMarker([51.7498095, -1.2593295], {
-            color: peterJayColor
-          }).bindPopup('<a href="/entities/peterJay_353"><h3>Peter Jay</h3></a><p>1 Littlegate St University of Oxford<br />Oxford, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(peterJay);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="peterJay.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="peterJay.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var ronaldJohnsonColor = getRandomColor();
       var style = '.' + 'ronaldJohnson';
@@ -611,13 +573,6 @@
             color: ericMottramColor
           }).bindPopup('<a href="/entities/ericMottram_364"><h3>Eric Mottram</h3></a><p>15 Vicarage Gate Kensington<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ericMottram);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ericMottram.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ericMottram.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var NewMeasureColor = getRandomColor();
-      var style = '.' + 'NewMeasure';
-      var NewMeasure = L.featureGroup([
-          L.circleMarker([51.7498095, -1.2593295], {
-            color: NewMeasureColor
-          }).bindPopup('<a href="/entities/NewMeasure_352"><h3>New Measure</h3></a><p>1 Littlegate St University of Oxford<br />Oxford, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(NewMeasure);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="NewMeasure.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="NewMeasure.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var marianODwyerColor = getRandomColor();
       var style = '.' + 'marianODwyer';
       var marianODwyer = L.featureGroup([
@@ -669,26 +624,12 @@
             color: ResiduColor
           }).bindPopup('<a href="/entities/Residu_454"><h3>Residu</h3></a><p>6 St Stephen’s Gardens<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Residu);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Residu.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Residu.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var ResuscitatorColor = getRandomColor();
-      var style = '.' + 'Resuscitator';
-      var Resuscitator = L.featureGroup([
-          L.circleMarker([51.3097366, -2.4952756], {
-            color: ResuscitatorColor
-          }).bindPopup('<a href="/entities/Resuscitator_344"><h3>Resuscitator</h3></a><p>35 Gregorys Tyning Paulton<br />Bristol, Bath and North East Somerset, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Resuscitator);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Resuscitator.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Resuscitator.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var danRichterColor = getRandomColor();
       var style = '.' + 'danRichter';
       var danRichter = L.featureGroup([
           L.circleMarker([51.4584946, -0.2058168], {
             color: danRichterColor
           }).bindPopup('<a href="/entities/danRichter_455"><h3>Dan Richter</h3></a><p>6 St Stephen’s Gardens<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(danRichter);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="danRichter.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="danRichter.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var andrewCRobinsonColor = getRandomColor();
-      var style = '.' + 'andrewCRobinson';
-      var andrewCRobinson = L.featureGroup([
-          L.circleMarker([51.4215688, -2.5587321], {
-            color: andrewCRobinsonColor
-          }).bindPopup('<a href="/entities/andrewCRobinson_467"><h3>Andrew C. Robinson</h3></a><p>38 Kinsale Rd<br />Bristol, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(andrewCRobinson);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="andrewCRobinson.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="andrewCRobinson.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var timRossColor = getRandomColor();
       var style = '.' + 'timRoss';
@@ -782,13 +723,6 @@
             color: bernardStoneColor
           }).bindPopup('<a href="/entities/bernardStone_496"><h3>Bernard Stone</h3></a><p>19 Kensington Church Walk Kensington<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(bernardStone);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="bernardStone.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="bernardStone.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var charlesTomlinsonColor = getRandomColor();
-      var style = '.' + 'charlesTomlinson';
-      var charlesTomlinson = L.featureGroup([
-          L.circleMarker([51.6330952, -2.2998408], {
-            color: charlesTomlinsonColor
-          }).bindPopup('<a href="/entities/charlesTomlinson_522"><h3>Charles Tomlinson</h3></a><p>Brook Cottage<br />Ozleworth, Wotton-under-Edge, Gloucestershire, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(charlesTomlinson);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="charlesTomlinson.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="charlesTomlinson.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var TrigramPressColor = getRandomColor();
       var style = '.' + 'TrigramPress';
       var TrigramPress = L.featureGroup([
@@ -846,7 +780,6 @@
         davidAdnopoz,
         clarissaAinley,
         davidAinley,
-        peterArmstrong,
         rogerBarnard,
         johnBarrell,
         larryBensky,
@@ -857,7 +790,6 @@
         sarahBurgess,
         williamBurroughs,
         CapeGoliard,
-        davidCoates,
         ColumbiaPictures,
         davidSusanCoxhead,
         DesertReview,
@@ -881,13 +813,10 @@
         hildegardeHoffmann,
         anselmHollo,
         johnHopkins,
-        tomHopkinson,
         michaelHorovitz,
         bobHowell,
         haroldHumes,
         IndicaBooksAndGallery,
-        johnJames,
-        peterJay,
         ronaldJohnson,
         tinaKean,
         lionelKearns,
@@ -908,16 +837,13 @@
         stuartMontegomery,
         hedleyMorgan,
         ericMottram,
-        NewMeasure,
         marianODwyer,
         evePacker,
         PeaceNews,
         tomRaworth,
         karelReisz,
         Residu,
-        Resuscitator,
         danRichter,
-        andrewCRobinson,
         timRoss,
         claudeRoyetJournoud,
         katieRuse,
@@ -926,7 +852,6 @@
         Sharkey,
         normanSolomon,
         bernardStone,
-        charlesTomlinson,
         TrigramPress,
         TurretBookshop,
         paulWallace,

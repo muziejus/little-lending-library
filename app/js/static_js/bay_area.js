@@ -6,13 +6,6 @@
             color: donaldAllenColor
           }).bindPopup('<a href="/entities/donaldAllen_2"><h3>Donald Allen</h3></a><p>1815 Jones St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(donaldAllen);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="donaldAllen.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="donaldAllen.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var alanAnsenColor = getRandomColor();
-      var style = '.' + 'alanAnsen';
-      var alanAnsen = L.featureGroup([
-          L.circleMarker([37.983917, 23.7293599], {
-            color: alanAnsenColor
-          }).bindPopup('<a href="/entities/alanAnsen_10"><h3>Alan Ansen</h3></a><p>American Express<br />Athens, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(alanAnsen);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="alanAnsen.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="alanAnsen.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var AuerhahnPressColor = getRandomColor();
       var style = '.' + 'AuerhahnPress';
       var AuerhahnPress = L.featureGroup([
@@ -240,16 +233,6 @@
             color: andreiCordescuColor
           }).bindPopup('<a href="/entities/andreiCordescu_92"><h3>Andrei Cordescu</h3></a><p>3779 25th St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(andreiCordescu);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="andreiCordescu.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="andreiCordescu.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var gregoryCorsoColor = getRandomColor();
-      var style = '.' + 'gregoryCorso';
-      var gregoryCorso = L.featureGroup([
-          L.circleMarker([37.9775103, 23.743949], {
-            color: gregoryCorsoColor
-          }).bindPopup('<a href="/entities/gregoryCorso_103"><h3>Gregory Corso</h3></a><p>Alopekis 19<br />Athina, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(gregoryCorso);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="gregoryCorso.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="gregoryCorso.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([48.8497931, 2.3401905], {
-            color: gregoryCorsoColor
-          }).bindPopup('<a href="/entities/gregoryCorso_103"><h3>Gregory Corso</h3></a><p>Hôtel Stella, 41 Rue Monsieur le Prince<br />Paris, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(gregoryCorso);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="gregoryCorso.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="gregoryCorso.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var CowColor = getRandomColor();
       var style = '.' + 'Cow';
       var Cow = L.featureGroup([
@@ -448,13 +431,6 @@
           L.circleMarker([37.753181, -122.410732], {
             color: jonathanGreeneColor
           }).bindPopup('<a href="/entities/jonathanGreene_204"><h3>Jonathan Greene</h3></a><p>1171 Alabama St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jonathanGreene);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jonathanGreene.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jonathanGreene.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var lorenzGudeColor = getRandomColor();
-      var style = '.' + 'lorenzGude';
-      var lorenzGude = L.featureGroup([
-          L.circleMarker([37.7305345, -89.223567], {
-            color: lorenzGudeColor
-          }).bindPopup('<a href="/entities/lorenzGude_216"><h3>Lorenz Gude</h3></a><p>508 W Sycamore St<br />Carbondale, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(lorenzGude);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="lorenzGude.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="lorenzGude.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var robertHarrisColor = getRandomColor();
       var style = '.' + 'robertHarris';
@@ -1067,7 +1043,6 @@
       ]);
     var allFeatures = L.featureGroup([
         donaldAllen,
-        alanAnsen,
         AuerhahnPress,
         gordonBaldwin,
         billBeckman,
@@ -1088,7 +1063,6 @@
         CityLights,
         clarkCoolidge,
         andreiCordescu,
-        gregoryCorso,
         Cow,
         CoyoteSJournal,
         didiCrane,
@@ -1105,7 +1079,6 @@
         allenGinsberg,
         GnomonPress,
         jonathanGreene,
-        lorenzGude,
         robertHarris,
         dRHazelton,
         georgeHitchcock,

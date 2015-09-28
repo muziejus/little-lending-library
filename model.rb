@@ -78,17 +78,17 @@ class Address
 
   def self.londoners
     london = App.locations["london"]
-    all(:latitude.gt => london[:south], :latitude.lt => london[:north]).entities.all_sorted
+    all(:latitude.gt => london[:south], :latitude.lt => london[:north], :longitude.gt => london[:west], :longitude.lt => london[:east]).entities.all_sorted
   end
 
   def self.new_yorkers
     new_york = App.locations["new_york"]
-    all(:latitude.gt => new_york[:south], :latitude.lt => new_york[:north]).entities.all_sorted
+    all(:latitude.gt => new_york[:south], :latitude.lt => new_york[:north], :longitude.gt => new_york[:west], :longitude.lt => new_york[:east]).entities.all_sorted
   end
 
   def self.bay_areaers
     bay_area = App.locations["bay_area"]
-    all(:latitude.gt => bay_area[:south], :latitude.lt => bay_area[:north]).entities.all_sorted
+    all(:latitude.gt => bay_area[:south], :latitude.lt => bay_area[:north], :longitude.gt => bay_area[:west], :longitude.lt => bay_area[:east]).entities.all_sorted
   end
 
   has n, :addressizations

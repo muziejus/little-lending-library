@@ -309,16 +309,6 @@
             color: bobCaligyColor
           }).bindPopup('<a href="/entities/bobCaligy_123"><h3>Bob Caligy</h3></a><p>263 Broome St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(bobCaligy);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="bobCaligy.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="bobCaligy.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var ronaldCaplanColor = getRandomColor();
-      var style = '.' + 'ronaldCaplan';
-      var ronaldCaplan = L.featureGroup([
-          L.circleMarker([40.450982, -79.951046], {
-            color: ronaldCaplanColor
-          }).bindPopup('<a href="/entities/ronaldCaplan_90"><h3>Ronald Caplan</h3></a><p>230 N Craig St<br />Pittsburgh, PA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ronaldCaplan);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ronaldCaplan.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ronaldCaplan.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([40.443032, -79.914316], {
-            color: ronaldCaplanColor
-          }).bindPopup('<a href="/entities/ronaldCaplan_90"><h3>Ronald Caplan</h3></a><p>6619 Northumberland St<br />Pittsburgh, PA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(ronaldCaplan);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="ronaldCaplan.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="ronaldCaplan.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var martinCareyColor = getRandomColor();
       var style = '.' + 'martinCarey';
       var martinCarey = L.featureGroup([
@@ -505,37 +495,6 @@
             color: tomDischColor
           }).bindPopup('<a href="/entities/tomDisch_159"><h3>Tom Disch</h3></a><p>1 Sheridan Square<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tomDisch);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tomDisch.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tomDisch.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var edwardDornColor = getRandomColor();
-      var style = '.' + 'edwardDorn';
-      var edwardDorn = L.featureGroup([
-          L.circleMarker([41.932406, -87.651955], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>911 W Diversey Pkwy<br />Chicago, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([37.7868237, -122.4369219], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>1811 Pierce St #3<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([37.755102, -122.4731063], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>885 Noriega St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([41.156836, -81.35023], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>521 Crain Ave<br />Kent, OH<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([51.8734875, 0.7122493], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>“Linden” Colchester Rd<br />Colchester, Essex, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([51.885149, 0.8825745], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>6 Victoria Rd<br />Colchester, Essex, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([42.8688818, -112.441835], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>843 E Clark St<br />Pocatello, ID, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([51.8904347, 0.8646388], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>187 Lexden Rd<br />Colchester, Essex, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([42.7962906, -70.9775075], {
-            color: edwardDornColor
-          }).bindPopup('<a href="/entities/edwardDorn_132"><h3>Edward Dorn</h3></a><p>Stewart St<br />West Newbury, MA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(edwardDorn);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="edwardDorn.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var DoubledayCoColor = getRandomColor();
       var style = '.' + 'DoubledayCo';
       var DoubledayCo = L.featureGroup([
@@ -707,13 +666,6 @@
             color: jeffGilesColor
           }).bindPopup('<a href="/entities/jeffGiles_375"><h3>Jeff Giles</h3></a><p>PO Box 94, Stuyvesant Station<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jeffGiles);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jeffGiles.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jeffGiles.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var salvadorGinerColor = getRandomColor();
-      var style = '.' + 'salvadorGiner';
-      var salvadorGiner = L.featureGroup([
-          L.circleMarker([41.3850639, 2.1734035], {
-            color: salvadorGinerColor
-          }).bindPopup('<a href="/entities/salvadorGiner_202"><h3>Salvador Giner</h3></a><p>Milanesado 29<br />Barcelona, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(salvadorGiner);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="salvadorGiner.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="salvadorGiner.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var allenGinsbergColor = getRandomColor();
       var style = '.' + 'allenGinsberg';
       var allenGinsberg = L.featureGroup([
@@ -767,13 +719,6 @@
             color: charlesGoldmanColor
           }).bindPopup('<a href="/entities/charlesGoldman_212"><h3>Charles Goldman</h3></a><p>513 Commonwealth Ave<br />Bronx, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(charlesGoldman);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="charlesGoldman.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="charlesGoldman.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var GoldsteinColor = getRandomColor();
-      var style = '.' + 'Goldstein';
-      var Goldstein = L.featureGroup([
-          L.circleMarker([41.329627, -71.905531], {
-            color: GoldsteinColor
-          }).bindPopup('<a href="/entities/Goldstein_221"><h3>Goldstein</h3></a><p>16 School St<br />Stonington, CT<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Goldstein);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Goldstein.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Goldstein.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var richardGoldsteinColor = getRandomColor();
       var style = '.' + 'richardGoldstein';
       var richardGoldstein = L.featureGroup([
@@ -794,13 +739,6 @@
           L.circleMarker([40.7578129, -73.9805234], {
             color: GothamBookMartColor
           }).bindPopup('<a href="/entities/GothamBookMart_206"><h3>Gotham Book Mart</h3></a><p>41 W 47th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(GothamBookMart);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="GothamBookMart.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="GothamBookMart.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var GrassrootsColor = getRandomColor();
-      var style = '.' + 'Grassroots';
-      var Grassroots = L.featureGroup([
-          L.circleMarker([40.7497676, -111.881531], {
-            color: GrassrootsColor
-          }).bindPopup('<a href="/entities/Grassroots_220"><h3>Grassroots</h3></a><p>332 E. 9th<br />, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(Grassroots);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="Grassroots.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="Grassroots.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var drReubenGreenbergColor = getRandomColor();
       var style = '.' + 'drReubenGreenberg';
@@ -994,13 +932,6 @@
             color: alexKatzColor
           }).bindPopup('<a href="/entities/alexKatz_334"><h3>Alex Katz</h3></a><p>182 5th Ave<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(alexKatz);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="alexKatz.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="alexKatz.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var jackKerouacColor = getRandomColor();
-      var style = '.' + 'jackKerouac';
-      var jackKerouac = L.featureGroup([
-          L.circleMarker([40.9044568, -73.3366719], {
-            color: jackKerouacColor
-          }).bindPopup('<a href="/entities/jackKerouac_326"><h3>Jack Kerouac</h3></a><p>9 Judy Ann Ct<br />Northport, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jackKerouac);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jackKerouac.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jackKerouac.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var johnKeysColor = getRandomColor();
       var style = '.' + 'johnKeys';
       var johnKeys = L.featureGroup([
@@ -1048,25 +979,6 @@
           L.circleMarker([40.735887, -74.003623], {
             color: kennethKochColor
           }).bindPopup('<a href="/entities/kennethKoch_325"><h3>Kenneth Koch</h3></a><p>278 W 4th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(kennethKoch);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="kennethKoch.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="kennethKoch.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var jamesKollerColor = getRandomColor();
-      var style = '.' + 'jamesKoller';
-      var jamesKoller = L.featureGroup([
-          L.circleMarker([35.678462, -105.924686], {
-            color: jamesKollerColor
-          }).bindPopup('<a href="/entities/jamesKoller_323"><h3>James Koller</h3></a><p>409 Camino Del Monte Sol<br />Santa Fe, NM<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jamesKoller);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([44.3486793, -70.0661649], {
-            color: jamesKollerColor
-          }).bindPopup('<a href="/entities/jamesKoller_323"><h3>James Koller</h3></a><p>PO Box 223<br />Wayne, ME<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jamesKoller);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([37.964926, -122.5333747], {
-            color: jamesKollerColor
-          }).bindPopup('<a href="/entities/jamesKoller_323"><h3>James Koller</h3></a><p>233 D St San Rafael<br />San Rafael, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jamesKoller);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([41.3680919, -89.4648145], {
-            color: jamesKollerColor
-          }).bindPopup('<a href="/entities/jamesKoller_323"><h3>James Koller</h3></a><p>RR #2<br />Princeton, IL<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jamesKoller);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([38.375819, -122.811343], {
-            color: jamesKollerColor
-          }).bindPopup('<a href="/entities/jamesKoller_323"><h3>James Koller</h3></a><p>538 Sparkes Rd<br />Sebastopol, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jamesKoller);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jamesKoller.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var richardKolmarColor = getRandomColor();
       var style = '.' + 'richardKolmar';
@@ -1118,13 +1030,6 @@
           L.circleMarker([40.73699, -73.999483], {
             color: stanleyKunitzColor
           }).bindPopup('<a href="/entities/stanleyKunitz_337"><h3>Stanley Kunitz</h3></a><p>157 W 12th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(stanleyKunitz);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="stanleyKunitz.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="stanleyKunitz.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var gregKuzmaColor = getRandomColor();
-      var style = '.' + 'gregKuzma';
-      var gregKuzma = L.featureGroup([
-          L.circleMarker([41.066164, -80.0521942], {
-            color: gregKuzmaColor
-          }).bindPopup('<a href="/entities/gregKuzma_311"><h3>Greg Kuzma</h3></a><p>134 Normal Ave<br />Slippery Rock, PA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(gregKuzma);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="gregKuzma.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="gregKuzma.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var joanneKygerColor = getRandomColor();
       var style = '.' + 'joanneKyger';
@@ -1788,13 +1693,6 @@
             color: georgeSchneemanColor
           }).bindPopup('<a href="/entities/georgeSchneeman_507"><h3>George Schneeman</h3></a><p>244 E 7th St<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(georgeSchneeman);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="georgeSchneeman.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="georgeSchneeman.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var jamesSchuylerColor = getRandomColor();
-      var style = '.' + 'jamesSchuyler';
-      var jamesSchuyler = L.featureGroup([
-          L.circleMarker([40.882696, -72.3898169], {
-            color: jamesSchuylerColor
-          }).bindPopup('<a href="/entities/jamesSchuyler_498"><h3>James Schuyler</h3></a><p>49 S Main St<br />Southampton, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(jamesSchuyler);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="jamesSchuyler.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="jamesSchuyler.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var alanSenaukeColor = getRandomColor();
       var style = '.' + 'alanSenauke';
       var alanSenauke = L.featureGroup([
@@ -1852,13 +1750,6 @@
           L.circleMarker([40.7269451, -73.9831168], {
             color: gilbertSorrentinoColor
           }).bindPopup('<a href="/entities/gilbertSorrentino_490"><h3>Gilbert Sorrentino</h3></a><p>131 Avenue A<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(gilbertSorrentino);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="gilbertSorrentino.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="gilbertSorrentino.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var hardieStMartinColor = getRandomColor();
-      var style = '.' + 'hardieStMartin';
-      var hardieStMartin = L.featureGroup([
-          L.circleMarker([41.4066912, 2.1822852], {
-            color: hardieStMartinColor
-          }).bindPopup('<a href="/entities/hardieStMartin_491"><h3>Hardie St. Martin</h3></a><p>Carrer de València, 548<br />Barcelona, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(hardieStMartin);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="hardieStMartin.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="hardieStMartin.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var johnStantonColor = getRandomColor();
       var style = '.' + 'johnStanton';
@@ -1955,13 +1846,6 @@
             color: tomVeitchColor
           }).bindPopup('<a href="/entities/tomVeitch_542"><h3>Tom Veitch</h3></a><p>100 6th Ave<br />Brooklyn, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(tomVeitch);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="tomVeitch.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="tomVeitch.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var johnVernonColor = getRandomColor();
-      var style = '.' + 'johnVernon';
-      var johnVernon = L.featureGroup([
-          L.circleMarker([40.7635925, -111.843474], {
-            color: johnVernonColor
-          }).bindPopup('<a href="/entities/johnVernon_547"><h3>John Vernon</h3></a><p>Department of English, University of Utah<br />Salt Lake City, UT<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(johnVernon);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="johnVernon.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="johnVernon.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var dianeWakoskiColor = getRandomColor();
       var style = '.' + 'dianeWakoski';
       var dianeWakoski = L.featureGroup([
@@ -2026,16 +1910,6 @@
             color: donaldWeingartenColor
           }).bindPopup('<a href="/entities/donaldWeingarten_571"><h3>Donald Weingarten</h3></a><p>530 Riverside Dr<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(donaldWeingarten);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="donaldWeingarten.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="donaldWeingarten.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
-      var rogerWhelanColor = getRandomColor();
-      var style = '.' + 'rogerWhelan';
-      var rogerWhelan = L.featureGroup([
-          L.circleMarker([51.5131546, -0.1879322], {
-            color: rogerWhelanColor
-          }).bindPopup('<a href="/entities/rogerWhelan_573"><h3>Roger Whelan</h3></a><p>115 Queensway<br />London, <br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(rogerWhelan);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="rogerWhelan.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="rogerWhelan.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([41.0429527, -72.1473018], {
-            color: rogerWhelanColor
-          }).bindPopup('<a href="/entities/rogerWhelan_573"><h3>Roger Whelan</h3></a><p>811 Fireplace Rd<br />East Hampton, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(rogerWhelan);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="rogerWhelan.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="rogerWhelan.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
       var lauranceWiederColor = getRandomColor();
       var style = '.' + 'lauranceWieder';
       var lauranceWieder = L.featureGroup([
@@ -2048,19 +1922,6 @@
           L.circleMarker([40.7981381, -73.9483611], {
             color: lauranceWiederColor
           }).bindPopup('<a href="/entities/lauranceWieder_584"><h3>Laurance Wieder</h3></a><p>??? W 112th St #2D<br />New York, NY<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(lauranceWieder);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="lauranceWieder.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="lauranceWieder.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-      ]);
-      var WildDogColor = getRandomColor();
-      var style = '.' + 'WildDog';
-      var WildDog = L.featureGroup([
-          L.circleMarker([40.7607793, -111.8910474], {
-            color: WildDogColor
-          }).bindPopup('<a href="/entities/WildDog_549"><h3>Wild Dog</h3></a><p>PO Box 11094<br />Salt Lake City, UT<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WildDog);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([37.773579, -122.443659], {
-            color: WildDogColor
-          }).bindPopup('<a href="/entities/WildDog_549"><h3>Wild Dog</h3></a><p>1568 Fell St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WildDog);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
-          L.circleMarker([37.7682169, -122.4474228], {
-            color: WildDogColor
-          }).bindPopup('<a href="/entities/WildDog_549"><h3>Wild Dog</h3></a><p>39 Downey St<br />San Francisco, CA<br /></p><div class="btn-group btn-group-sm" role="group" aria-label="..."><button type="button" class="btn btn-default" onClick="map.removeLayer(WildDog);resetColor(style);"><span class="glyphicon glyphicon-remove"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToFront()"><span class="glyphicon glyphicon-arrow-up"></span></button><button type="button" class="btn btn-default" onClick="WildDog.bringToBack()"><span class="glyphicon glyphicon-arrow-down"></span></button></div>'),
       ]);
       var eliWilentzColor = getRandomColor();
       var style = '.' + 'eliWilentz';
@@ -2150,7 +2011,6 @@
         michaelBrownstein,
         rudyBurckhardt,
         bobCaligy,
-        ronaldCaplan,
         martinCarey,
         jimCarroll,
         cyrilCaster,
@@ -2172,7 +2032,6 @@
         dianeDiprima,
         marthaDiamond,
         tomDisch,
-        edwardDorn,
         DoubledayCo,
         marcelDuchamp,
         bobDylan,
@@ -2194,17 +2053,14 @@
         dickGallup,
         drDavidGerstein,
         jeffGiles,
-        salvadorGiner,
         allenGinsberg,
         johnGiorno,
         danielaGioseffi,
         mikeGoldberg,
         charlesGoldman,
-        Goldstein,
         richardGoldstein,
         ronGorchov,
         GothamBookMart,
-        Grassroots,
         drReubenGreenberg,
         tedGreenwald,
         redGrooms,
@@ -2229,21 +2085,18 @@
         claudiaKane,
         allanKaplan,
         alexKatz,
-        jackKerouac,
         johnKeys,
         georgeKimball,
         basilKing,
         galwayKinnell,
         billKinsinger,
         kennethKoch,
-        jamesKoller,
         richardKolmar,
         lucyKostelanetz,
         bettyKray,
         allenKrebs,
         Kulchur,
         stanleyKunitz,
-        gregKuzma,
         joanneKyger,
         LaceReview,
         frankLauria,
@@ -2309,7 +2162,6 @@
         lindaSchjeldahl,
         peterSchjeldahl,
         georgeSchneeman,
-        jamesSchuyler,
         alanSenauke,
         paulShalny,
         davidShapiro,
@@ -2317,7 +2169,6 @@
         SimonAndSchuster,
         elaineSolow,
         gilbertSorrentino,
-        hardieStMartin,
         johnStanton,
         michaelSteiner,
         barbaraStone,
@@ -2329,7 +2180,6 @@
         tonyTowle,
         VanguardRecords,
         tomVeitch,
-        johnVernon,
         dianeWakoski,
         anneWaldman,
         WarResistersLeague,
@@ -2337,9 +2187,7 @@
         lewisWarsh,
         hannahWeiner,
         donaldWeingarten,
-        rogerWhelan,
         lauranceWieder,
-        WildDog,
         eliWilentz,
         tedWilentz,
         missGalenWilliams,
