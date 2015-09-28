@@ -86,26 +86,35 @@ class App < Sinatra::Base
     mustache :about
   end
 
-  get "/people" do
+  get "/entities" do
     @static = true
+    @page_title = "Entities"
+    @file = "entities"
+    @entities = Entity.people
+    mustache :entities
+  end
+
+  get "/people" do
+    @static = false
     @page_title = "People"
-    @people = Entity.people
-    mustache :people
+    @file = "people"
+    @entities = Entity.people
+    mustache :entities
   end
 
   get "/rebuild_static_files" do
     # this only works locally, meaning changes still have to be committed and pushed to heroku. Still, better than nothing!
     @static = false
-    @people = Entity.people
-    dump = mustache :people
+    @entities = Entity.people
+    dump = mustache :entities
     %w(html js).each do |extension|
       rebuild_static_file(dump, :people, extension)
     end
   end
 
-  get "/people/:id" do
-    @entity = Entity.get params[:id]
-    mustache :person
+  get "/entities/:id" do
+    @entity = Entity.get params[:id].match(/\d+$/).to_s.to_i
+    mustache :entity_show
   end
 
   ["/new_york", "/bay_area", "/london", "/institutions"].each do |path|

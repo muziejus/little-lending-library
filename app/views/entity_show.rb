@@ -1,6 +1,6 @@
 class App
   module Views
-    class Person < Layout
+    class EntityShow < Layout
 
       def show_individual_entitys_features
         true
