@@ -1,9 +1,9 @@
-<!-- static_js_start -->
 {{#static_js}}
   {{{ js_people }}}
 {{/static_js}}
 {{^static_js}}
 <script>
+  // static_js_start
   {{#person}}
     var {{slug}}Color = getRandomColor();
     var style = '.' + '{{slug}}';
@@ -20,6 +20,6 @@
       {{slug}},
     {{/person}}
   ]);
+  // static_js_end
 </script>
 {{/static_js}}
-<!-- static_js_end -->

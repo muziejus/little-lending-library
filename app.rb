@@ -47,7 +47,26 @@ class App < Sinatra::Base
   end
 
   helpers do
-
+    def rebuild_static_file(dump, symbol, extension)
+      if extension == "html"
+        file = "app/html/#{symbol}.html"
+      elsif extension == "js"
+        file = "app/js/static_js/#{symbol}.js"
+      end
+      File.open(file, "w") do |f|
+        write = false
+        dump.each_line do |line|
+          if line =~ /static_#{extension}_start/
+            write = true
+          elsif line =~ /static_#{extension}_end/
+            write = false
+          end
+          if write == true
+            f.write line
+          end
+        end
+      end
+    end
   end
 
   
@@ -74,11 +93,13 @@ class App < Sinatra::Base
     mustache :people
   end
 
-  get "/unstatic/people" do
+  get "/rebuild_static_files" do
     @static = false
-    @page_title = "People"
     @people = Entity.people
-    mustache :people
+    dump = mustache :people
+    %w(html js).each do |extension|
+      rebuild_static_file(dump, :people, extension)
+    end
   end
 
   get "/people/:id" do
