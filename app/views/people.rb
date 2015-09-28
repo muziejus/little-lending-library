@@ -7,7 +7,7 @@ class App
           id: p.id,
           slug: p.slug,
           full_name: p.full_name,
-          # tags: p.tags,
+          tags: p.tags_to_sentence,
           address_count: p.addresses.length,
           associations_count: p.associations.length,
           address: p.addresses.map{ |a| {

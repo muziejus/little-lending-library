@@ -2,6 +2,7 @@ require 'data_mapper'
 require 'dm-validations'
 require 'active_support'
 require 'active_support/inflector'
+require 'active_support/core_ext/array/conversions'
 
 # DATABASE_URL is set by running: heroku config:set DATABASE_URL="<as in web client>"
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/sqlite.db")
@@ -37,6 +38,10 @@ class Entity
   def slug
     "#{self.name}_#{self.last_name}".parameterize.underscore.camelize(:lower)
     # "#{self.name}_#{self.last_name}".sub(/_$/, "").parameterize.underscore.camelize(:lower)
+  end
+
+  def tags_to_sentence
+    self.tags.map{ |t| t.name}.to_sentence
   end
 
 end
