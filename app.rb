@@ -160,10 +160,46 @@ class App < Sinatra::Base
     "Looks like something worked"
   end
 
-  ["/new_york", "/bay_area", "/london"].each do |path|
-    get path do
-      redirect "/"
-    end
+  # ["/new_york", "/bay_area"].each do |path|
+  #   get path do
+  #     redirect "/"
+  #   end
+  # end
+
+  get "/london" do
+    london = App.london
+    @max_bounds = [[london[:south], london[:west]], [london[:north], london[:east]]]
+    @page_title = "London"
+    @entities = Address.londoners
+    mustache :entities
+  end
+
+  get "/new_york" do
+    new_york = App.new_york
+    @max_bounds = [[new_york[:south], new_york[:west]], [new_york[:north], new_york[:east]]]
+    @page_title = "New York"
+    @entities = Address.new_yorkers
+    mustache :entities
+  end
+
+  get "/bay_area" do
+    bay_area = App.bay_area
+    @max_bounds = [[bay_area[:south], bay_area[:west]], [bay_area[:north], bay_area[:east]]]
+    @page_title = "Bay Area"
+    @entities = Address.bay_areaers
+    mustache :entities
+  end
+
+  def self.new_york
+    { north: 41.42, south: 40.41, east: -73.51, west: -74.29 }
+  end
+
+  def self.london
+    { north: 51.764, south: 51.205, east: 0.607, west: -0.635 }
+  end
+
+  def self.bay_area
+    { north: 38.0, south: 37.51, east: -121.989, west: -122.70 }
   end
 
 end

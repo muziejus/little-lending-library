@@ -7,6 +7,14 @@ class App
         true
       end
 
+      def force_max_bounds
+        true unless @max_bounds.nil?
+      end
+
+      def max_bounds # seems redundant?
+        @max_bounds
+      end
+
       def static_js
         @static
       end

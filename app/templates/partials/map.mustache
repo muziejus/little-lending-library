@@ -1,6 +1,15 @@
 <div id="map" style="height: 600px;" class="col-md-8"></div>
 <script>
-  var map = L.map('map').setView([ 40.7308 , -73.9975 ], 15);
+  {{#force_max_bounds}}
+    var bounds = L.latLngBounds({{{ max_bounds }}});
+    var map = L.map('map', {
+                    maxBounds: bounds
+    });
+    map.fitBounds(bounds); 
+  {{/force_max_bounds}}
+  {{^force_max_bounds}}
+    var map = L.map('map').setView([ 40.7308 , -73.9975 ], 15);
+  {{/force_max_bounds}}
   {{#show_individual_entitys_features}}
     {{#circle}}
       marker = L.circleMarker({{{ latlng }}}).addTo(map)

@@ -76,6 +76,18 @@ class Address
   property :crossed_out, Boolean
   property :recheck, Boolean
 
+  def self.londoners
+    all(:latitude.gt => App.london[:south], :latitude.lt => App.london[:north]).entities.all_sorted
+  end
+
+  def self.new_yorkers
+    all(:latitude.gt => App.new_york[:south], :latitude.lt => App.new_york[:north]).entities.all_sorted
+  end
+
+  def self.bay_areaers
+    all(:latitude.gt => App.bay_area[:south], :latitude.lt => App.bay_area[:north]).entities.all_sorted
+  end
+
   has n, :addressizations
   has n, :entities, through: :addressizations
 end
