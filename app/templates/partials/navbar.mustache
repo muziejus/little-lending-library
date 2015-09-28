@@ -17,6 +17,8 @@
             <ul class="dropdown-menu">
               <li class="{{#selected_item}}people{{/selected_item}}"><a href="/people">People</a></li>
               <li class="{{#selected_item}}institutions{{/selected_item}}"><a href="/institutions">Institutions</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="{{#selected_item}}entities{{/selected_item}}"><a href="/entities">All Entities</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -30,8 +32,10 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tags <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li class="{{#selected_item}}tag{{/selected_item}}"><a href="#">Some Tag</a></li>
-              <li class="{{#selected_item}}tag{{/selected_item}}"><a href="#">Some Tag</a></li>
+              <li class="{{#selected_item}}tags/poets{{/selected_item}}"><a href="/tags/poets">Poets</a></li>
+              <li class="{{#selected_item}}tags/novelists{{/selected_item}}"><a href="/tags/novelists">Novelists</a></li>
+              <li class="{{#selected_item}}tags/musicians{{/selected_item}}"><a href="/tags/musicians">Musicians</a></li>
+              <li role="separator" class="divider"></li>
               <li class="{{#selected_item}}tag{{/selected_item}}"><a href="#">Some Tag</a></li>
             </ul>
           </li>

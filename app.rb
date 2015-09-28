@@ -23,7 +23,7 @@ class App < Sinatra::Base
     js :app_js_people, [ "/js/static_js/people.js" ]
     js :app_js_entities, [ "/js/static_js/entities.js" ]
     js :app_js_institutions, [ "/js/static_js/institutions.js" ]
-    # js :app_js_chart, [ "/js/vendor/Chart.js", "/js/vendor/Chart.Scatter.js" ]
+    # Cities and tags are not yet added here.
 
     # Heroku doesn't like this call but assets end up minified anyway.
     # Left them in in for reference.
@@ -116,6 +116,30 @@ class App < Sinatra::Base
     @page_title = "People"
     @file = "people"
     @entities = Entity.people
+    mustache :entities
+  end
+
+  get "/tags/poets" do
+    @static = false
+    @page_title = "Poets"
+    @file = "poets"
+    @entities = Tag.all(name: "Poet").entities.all_sorted
+    mustache :entities
+  end
+
+  get "/tags/novelists" do
+    @static = false
+    @page_title = "Novelists"
+    @file = "poets"
+    @entities = Tag.all(name: "Novelist").entities.all_sorted
+    mustache :entities
+  end
+
+  get "/tags/musicians" do
+    @static = false
+    @page_title = "Musicians"
+    @file = "musicians"
+    @entities = Tag.all(name: "Musician").entities.all_sorted
     mustache :entities
   end
 
