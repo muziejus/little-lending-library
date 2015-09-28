@@ -16,6 +16,8 @@ class App < Sinatra::Base
     serve "/img",   from: "app/img"
 
     css :app_css, [ "/css/*.css", "/css/*.scss" ]
+    css :app_css_cover, [ "/css/single-page/cover.css" ]
+
     js :app_js, [
       "/js/*.js", 
       # "/js/vendor/*.js"
@@ -80,7 +82,8 @@ class App < Sinatra::Base
   end
   
   get "/" do
-    @page_title = "Home"
+    @css_cover = css :app_css_cover
+    @page_title = "Mapping Postwar Poetry"
     mustache :index, { layout: :splash_page }
   end
 

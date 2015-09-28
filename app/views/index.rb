@@ -1,6 +1,6 @@
 class App
   module Views
-    class Index < Layout
+    class Index < SplashPage
       include ViewHelpers
     	
     end
