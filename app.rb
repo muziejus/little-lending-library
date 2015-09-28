@@ -15,7 +15,7 @@ class App < Sinatra::Base
     serve "/css",   from: "app/css"
     serve "/img",   from: "app/img"
 
-    css :app_css, [ "/css/*.css" ]
+    css :app_css, [ "/css/*.css", "/css/*.scss" ]
     js :app_js, [
       "/js/*.js", 
       # "/js/vendor/*.js"
@@ -67,6 +67,7 @@ class App < Sinatra::Base
 
   get "/people" do
     @page_title = "People"
+    @people = Entity.people
     mustache :people
   end
 

@@ -1,0 +1,37 @@
+// keep this order
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+// @import "tom-clark-address-book";
+// @import "loading";
+// @import "leaflet-cluster";
+
+// @import "bootstrap"
+
+#map {
+  height: 500px;
+}
+
+.sidebar-scroll {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ember-leaflet-map {
+  height: 500px;
+}
+
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+  -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+  -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+// /*
+// *= require bootstrap
+// *= require loading
+// *= require leaflet
+// *= require leaflet-cluster
+// *= depend_on_asset "layers.png"
+// *= depend_on_asset "layers-2x.png"
+// */

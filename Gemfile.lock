@@ -1,6 +1,12 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    activesupport (4.2.4)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
     addressable (2.3.8)
     bcrypt (3.1.10)
     bcrypt-ruby (3.1.5)
@@ -61,10 +67,12 @@ GEM
       data_objects (= 0.10.16)
     eventmachine (1.0.8)
     fastercsv (1.5.5)
+    i18n (0.7.0)
     jsmin (1.0.1)
     json (1.8.3)
     json_pure (1.8.2)
     kgio (2.10.0)
+    minitest (5.8.1)
     multi_json (1.11.2)
     mustache (0.99.8)
     mustache-sinatra (1.0.1)
@@ -75,6 +83,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     raindrops (0.15.0)
+    sass (3.4.18)
     shotgun (0.9.1)
       rack (>= 1.0)
     sinatra (1.4.6)
@@ -93,7 +102,10 @@ GEM
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
+    thread_safe (0.3.5)
     tilt (1.4.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     unicorn (4.9.0)
       kgio (~> 2.6)
       rack
@@ -104,11 +116,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   data_mapper
   dm-postgres-adapter
   dm-sqlite-adapter
   dm-validations
   mustache-sinatra
+  sass
   shotgun
   sinatra
   sinatra-assetpack
