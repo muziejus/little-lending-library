@@ -12,7 +12,7 @@ class Entity
 
   property :id, Serial
   property :name, String
-  property :last_name, String
+  property :first_name, String
   property :aka, String
   property :title, String
   property :type, String
@@ -32,12 +32,11 @@ class Entity
   end
 
   def full_name
-    self.last_name ? "#{self.name} #{self.last_name}" : self.name
+    self.first_name ? "#{self.first_name} #{self.name}" : self.name
   end
 
   def slug
-    "#{self.name}_#{self.last_name}".parameterize.underscore.camelize(:lower)
-    # "#{self.name}_#{self.last_name}".sub(/_$/, "").parameterize.underscore.camelize(:lower)
+    "#{self.first_name}_#{self.name}".parameterize.underscore.camelize(:lower)
   end
 
   def tags_to_sentence
@@ -106,4 +105,5 @@ class Taggization
   belongs_to :entity
 end
 
+# DataMapper.auto_migrate! # empties out the database.
 DataMapper.auto_upgrade!
