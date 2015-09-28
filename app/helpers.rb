@@ -12,7 +12,7 @@ class App
     def javascripts
       @js
     end
-
+    
     # def js_chart
     #   @js_chart
     # end

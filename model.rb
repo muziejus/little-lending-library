@@ -77,15 +77,18 @@ class Address
   property :recheck, Boolean
 
   def self.londoners
-    all(:latitude.gt => App.london[:south], :latitude.lt => App.london[:north]).entities.all_sorted
+    london = App.locations["london"]
+    all(:latitude.gt => london[:south], :latitude.lt => london[:north]).entities.all_sorted
   end
 
   def self.new_yorkers
-    all(:latitude.gt => App.new_york[:south], :latitude.lt => App.new_york[:north]).entities.all_sorted
+    new_york = App.locations["new_york"]
+    all(:latitude.gt => new_york[:south], :latitude.lt => new_york[:north]).entities.all_sorted
   end
 
   def self.bay_areaers
-    all(:latitude.gt => App.bay_area[:south], :latitude.lt => App.bay_area[:north]).entities.all_sorted
+    bay_area = App.locations["bay_area"]
+    all(:latitude.gt => bay_area[:south], :latitude.lt => bay_area[:north]).entities.all_sorted
   end
 
   has n, :addressizations

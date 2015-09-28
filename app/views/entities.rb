@@ -35,13 +35,13 @@ class App
           @js_institutions
         when "entities"
           @js_entities
+        when "new_york"
+          @js_new_york
+        when "london"
+          @js_london
+        when "bay_area"
+          @js_bay_area
         # Not yet set to be static.
-        # when "new_york"
-        #   @js_new_york
-        # when "london"
-        #   @js_london
-        # when "bay_area"
-        #   @js_bay_area
         # when "poets"
         #   @js_poets
         # when "novelists"
