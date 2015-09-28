@@ -1,9 +1,22 @@
 class App
   module Views
     class People < Layout
+      include ViewHelpers
 
       def show_all_features
         true
+      end
+
+      def static_js
+        true
+      end
+
+      def static_html
+        true
+      end
+
+      def html_dump
+        File.read("app/html/people.html")
       end
 
       def person

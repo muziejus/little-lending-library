@@ -13,6 +13,10 @@ class App
       @js
     end
 
+    def js_people
+      @js_people
+    end
+
     # def js_chart
     #   @js_chart
     # end

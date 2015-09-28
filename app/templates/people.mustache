@@ -6,6 +6,10 @@
       <button type="button" class="btn btn-default"  onClick="map.removeLayer(allFeatures);">Remove all features</button>
     </div>
     <p>&nbsp;</p>
+    {{#static_html}}
+      {{{ html_dump }}}
+    {{/static_html}}
+    {{^static_html}}
     <div class="sidebar-scroll">
       <table class="table table-striped table-hover table-condensed table-responsive">
         <tbody>
@@ -39,6 +43,7 @@
         </tbody>
       </table>
     </div>
+    {{/static_html}}
   </div>
   {{> partials/map_data}}  
   {{> partials/map }}

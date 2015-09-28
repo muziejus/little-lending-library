@@ -20,6 +20,7 @@ class App < Sinatra::Base
       "/js/*.js", 
       # "/js/vendor/*.js"
     ]
+    js :app_js_people, [ "/js/static_js/people.js" ]
     # js :app_js_chart, [ "/js/vendor/Chart.js", "/js/vendor/Chart.Scatter.js" ]
 
     # Heroku doesn't like this call but assets end up minified anyway.
@@ -40,6 +41,7 @@ class App < Sinatra::Base
   before do
     @css = css :app_css
     @js  = js  :app_js
+    @js_people = js :app_js_people
     # @js_chart = js :app_js_chart
     @path = request.path_info
   end
