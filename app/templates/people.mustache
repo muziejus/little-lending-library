@@ -6,6 +6,7 @@
       <button type="button" class="btn btn-default"  onClick="map.removeLayer(allFeatures);">Remove all features</button>
     </div>
     <p>&nbsp;</p>
+    <!-- static_html_start -->
     {{#static_html}}
       {{{ html_dump }}}
     {{/static_html}}
@@ -44,6 +45,7 @@
       </table>
     </div>
     {{/static_html}}
+    <!-- static_html_end -->
   </div>
   {{> partials/map_data}}  
   {{> partials/map }}

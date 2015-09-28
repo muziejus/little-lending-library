@@ -68,6 +68,14 @@ class App < Sinatra::Base
   end
 
   get "/people" do
+    @static = true
+    @page_title = "People"
+    @people = Entity.people
+    mustache :people
+  end
+
+  get "/unstatic/people" do
+    @static = false
     @page_title = "People"
     @people = Entity.people
     mustache :people

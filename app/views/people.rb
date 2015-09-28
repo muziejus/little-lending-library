@@ -8,11 +8,11 @@ class App
       end
 
       def static_js
-        true
+        @static
       end
 
       def static_html
-        true
+        @static
       end
 
       def html_dump
