@@ -7,129 +7,67 @@ require 'active_support/core_ext/array/conversions'
 # DATABASE_URL is set by running: heroku config:set DATABASE_URL="<as in web client>"
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/sqlite.db")
 
-class Entity
+class User
   include DataMapper::Resource
+  # include BCrypt
 
   property :id, Serial
   property :name, String
-  property :first_name, String
-  property :aka, String
+  property :username, String, key: true
+  property :password, BCryptHash
+  property :email, String
+
+  has n, :books, child_key: [ :owner_id ]
+  has n, :loans, child_key: [ :owner_id ]
+  has n, :loans, child_key: [ :borrower_id ]
+  # has n, :associations, child_key: [ :source_id ]
+  # has n, :entities, self, through: :associations, via: :target
+
+  validates_uniqueness_of :username
+  validates_presence_of :password
+  validates_presence_of :email
+
+end
+
+class Book
+  include DataMapper::Resource
+
+  property :id, Serial
+  property :author, String # should maybe be array, but...
   property :title, String
-  property :type, String
+  property :year, Integer
   property :url, Text
-  property :once, Boolean
-  property :paris_review, Boolean
-
-  has n, :addressizations
-  has n, :addresses, through: :addressizations
-  has n, :taggizations
-  has n, :tags, through: :taggizations
-  has n, :associations, child_key: [ :source_id ]
-  has n, :entities, self, through: :associations, via: :target
-
-  def self.all_sorted
-    all(order: [ :name.asc, :first_name.asc ])
-  end
-
-  def self.people
-    all(type: "person", order: [ :name.asc, :first_name.asc ])
-  end
-
-  def self.institutions
-    all(type: "institution", order: [ :name.asc ])
-  end
-
-  def full_name
-    first_name ? "#{first_name} #{name}" : name
-  end
-
-  def slug
-    "#{first_name}_#{name}".parameterize.underscore.camelize(:lower)
-  end
-
-  def slug_id
-    "#{slug}_#{id}"
-  end
-
-  def tags_to_sentence
-    tags.map{ |t| t.name}.to_sentence
-  end
-
-end
-
-class Address
-  include DataMapper::Resource
-
-  property :id, Serial
-  property :care_of, String
-  property :street, String
-  property :city, String
-  property :state, String
-  property :postal_code, String
-  property :country, String
-  property :telephone, String
-  property :listed_name, String
+  property :cover, Text
   property :notes, Text
-  property :latitude, Float
-  property :longitude,Float
-  property :original, Boolean
-  property :crossed_out, Boolean
-  property :recheck, Boolean
+  property :added_on, Date
+  property :modified_on, Date
 
-  def self.londoners
-    london = App.locations["london"]
-    all(:latitude.gt => london[:south], :latitude.lt => london[:north], :longitude.gt => london[:west], :longitude.lt => london[:east]).entities.all_sorted
-  end
+  has n, :loans
 
-  def self.new_yorkers
-    new_york = App.locations["new_york"]
-    all(:latitude.gt => new_york[:south], :latitude.lt => new_york[:north], :longitude.gt => new_york[:west], :longitude.lt => new_york[:east]).entities.all_sorted
-  end
+  belongs_to :owner, 'User', key: true
 
-  def self.bay_areaers
-    bay_area = App.locations["bay_area"]
-    all(:latitude.gt => bay_area[:south], :latitude.lt => bay_area[:north], :longitude.gt => bay_area[:west], :longitude.lt => bay_area[:east]).entities.all_sorted
-  end
+  validates_presence_of :author
+  validates_presence_of :title
+  validates_presence_of :owner
 
-  has n, :addressizations
-  has n, :entities, through: :addressizations
 end
 
-class Tag
+class Loan
   include DataMapper::Resource
 
-  property :id, Serial
-  property :name, String
+  property :id, Serial, key: true
+  property :status, String
+  property :added_on, Date
+  property :modified_on, Date
+  
+  belongs_to :owner, 'User', key: true
+  belongs_to :borrower, 'User', key: true
+  belongs_to :book
 
-  has n, :taggizations
-  has n, :entities, through: :taggizations
-end
-
-class Association # This should be illegal?
-  include DataMapper::Resource
-
-  property :id, Serial
-
-  belongs_to :source, 'Entity', key: true
-  belongs_to :target, 'Entity', key: true
-end
-
-class Addressization
-  include DataMapper::Resource
-
-  property :id, Serial
-
-  belongs_to :address
-  belongs_to :entity
-end
-
-class Taggization
-  include DataMapper::Resource
-
-  property :id, Serial
-
-  belongs_to :tag
-  belongs_to :entity
+  validates_presence_of :status
+  validates_presence_of :owner
+  validates_presence_of :borrower
+  validates_presence_of :book
 end
 
 # DataMapper.auto_migrate! # empties out the database.

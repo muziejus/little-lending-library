@@ -11,10 +11,10 @@ gem 'data_mapper'
 gem 'dm-sqlite-adapter', group: :development
 gem 'dm-postgres-adapter', group: :production
 gem 'dm-validations'
-# gem 'rspec'
-# gem 'dm-rspec'
-gem 'sass'
-gem 'thin'#, '~> 1.6.4'
+gem 'rspec'
+gem 'dm-rspec'
+gem 'factory_girl'
+gem 'thin'
 gem 'shotgun'
 gem 'unicorn'
 
