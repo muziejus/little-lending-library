@@ -41,6 +41,7 @@ class Book
   property :notes, Text
   property :added_on, Date
   property :modified_on, Date
+  property :isbn, String
 
   has n, :loans
 

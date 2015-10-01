@@ -26,6 +26,7 @@ RSpec.describe Book do
   it { should have_property :notes }
   it { should have_property :added_on }
   it { should have_property :modified_on }
+  it { should have_property :isbn }
 
   it { should belong_to :owner }
   
