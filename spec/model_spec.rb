@@ -27,6 +27,7 @@ RSpec.describe Book do
   it { should have_property :added_on }
   it { should have_property :modified_on }
   it { should have_property :isbn }
+  it { should have_property :subject }
 
   it { should belong_to :owner }
   
@@ -44,12 +45,10 @@ RSpec.describe Loan do
   it { should have_property :added_on }
   it { should have_property :modified_on }
 
-  it { should belong_to :owner }
   it { should belong_to :borrower }
   it { should belong_to :book }
 
   it { validate_presence_of :status }
-  it { validate_presence_of :owner }
   it { validate_presence_of :borrower }
   it { validate_presence_of :book }
 

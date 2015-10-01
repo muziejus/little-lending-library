@@ -18,10 +18,7 @@ class User
   property :email, String
 
   has n, :books, child_key: [ :owner_id ]
-  has n, :loans, child_key: [ :owner_id ]
   has n, :loans, child_key: [ :borrower_id ]
-  # has n, :associations, child_key: [ :source_id ]
-  # has n, :entities, self, through: :associations, via: :target
 
   validates_uniqueness_of :username
   validates_presence_of :password
@@ -35,13 +32,14 @@ class Book
   property :id, Serial
   property :author, String # should maybe be array, but...
   property :title, String
+  property :isbn, String
+  property :subject, String
   property :year, Integer
   property :url, Text
   property :cover, Text
   property :notes, Text
   property :added_on, Date
   property :modified_on, Date
-  property :isbn, String
 
   has n, :loans
 
@@ -61,12 +59,10 @@ class Loan
   property :added_on, Date
   property :modified_on, Date
   
-  belongs_to :owner, 'User', key: true
   belongs_to :borrower, 'User', key: true
   belongs_to :book
 
   validates_presence_of :status
-  validates_presence_of :owner
   validates_presence_of :borrower
   validates_presence_of :book
 end
