@@ -11,10 +11,13 @@ gem 'data_mapper'
 gem 'dm-sqlite-adapter', group: :development
 gem 'dm-postgres-adapter', group: :production
 gem 'dm-validations'
-gem 'rspec'
-gem 'dm-rspec'
-gem 'factory_girl'
 gem 'thin'
 gem 'shotgun'
 gem 'unicorn'
 
+group :test, :development do
+  gem 'rack-test', require: 'rack/test'
+  gem 'rspec'
+  gem 'dm-rspec'
+  gem 'factory_girl'
+end

@@ -142,6 +142,7 @@ DEPENDENCIES
   dm-validations
   factory_girl
   mustache-sinatra
+  rack-test
   rspec
   shotgun
   sinatra

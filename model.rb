@@ -13,9 +13,11 @@ class User
 
   property :id, Serial
   property :name, String
+  property :email, String
   property :username, String, key: true
   property :password, BCryptHash
-  property :email, String
+  property :admin, Boolean, default: false
+
 
   has n, :books, child_key: [ :owner_id ]
   has n, :loans, child_key: [ :borrower_id ]
@@ -65,6 +67,20 @@ class Loan
   validates_presence_of :status
   validates_presence_of :borrower
   validates_presence_of :book
+end
+
+class Subject
+  include DataMapper::Resource
+
+  property :id, Serial, key: true
+  property :name, String
+  property :added_on, Date
+  property :modified_on, Date
+
+  has n, :books
+
+  validates_uniqueness_of :name
+
 end
 
 # DataMapper.auto_migrate! # empties out the database.

@@ -6,6 +6,7 @@ RSpec.describe User do
   it { should have_property :username }
   it { should have_property :password }
   it { should have_property :email }
+  it { should have_property :admin }
 
   it { should have_many :books }
   it { should have_many :loans }
@@ -27,7 +28,6 @@ RSpec.describe Book do
   it { should have_property :added_on }
   it { should have_property :modified_on }
   it { should have_property :isbn }
-  it { should have_property :subject }
 
   it { should belong_to :owner }
   
@@ -48,8 +48,19 @@ RSpec.describe Loan do
   it { should belong_to :borrower }
   it { should belong_to :book }
 
-  it { validate_presence_of :status }
-  it { validate_presence_of :borrower }
-  it { validate_presence_of :book }
+  it { should validate_presence_of :status }
+  it { should validate_presence_of :borrower }
+  it { should validate_presence_of :book }
+
+end
+
+RSpec.describe Subject do
+
+  it { should have_property :id }
+  it { should have_property :name }
+
+  it { should have_many :books }
+
+  it { should validate_uniqueness_of :name }
 
 end
