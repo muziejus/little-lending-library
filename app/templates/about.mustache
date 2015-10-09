@@ -1,5 +1,49 @@
-<h1>About this project…</h1>
-<p class="lead">Here is the about...</p>
-<p>This is a rewrite of an original Rails app into Sinatra. Boy oh boy does this work more cleanly.</p>
+<h1>About the Little Lending Library</h1>
 
-<p>This application is available on <a href="http://github.com/muziejus/tom-clark-address-book-sinatra">GitHub</a>.
+<p class="lead">Back in graduate school, my books were not getting enough use.
+  Similarly, there were times when I wanted something from a book, but I did
+  not want to buy the book and the university library’s copy was missing, or
+  out, or on some kind of reserve. If only I knew what books <em>my classmates
+    had…</em></p>
+  
+<h2>What is it?</h2>
+
+<p>The Little Lending Library is a decentralized library that relies on a
+  trusted friend/colleague network in order to maximize the available pool of
+  books for that group.</p>
+
+<p>The obvious use case is a cohort in a doctoral program, where every student
+  comes with a substantial library, but that library is likely very
+  idiosyncratic and largely hidden from the rest of the cohort.</p>
+
+<p>But this would also be useful for any small community that wants to share
+  books. Say a small immigrant community that wants books in their native
+  language, which are hard to find locally, to circulate, as was the case with
+  the Lithuanian community when I was in Paris.</p>
+
+<h2>How does it work?</h2>
+
+<p>The idea is basic, as there are only four models: <code>User</code>s,
+  <code>Book</code>s, <code>Loan</code>s, and <code>Subject</code>s, with the
+  final one an optional ontology for managing the library. A user signs up and then manually adds however many books from her library that she wants. She can add more at any time, or remove them, or freeze (make them unavailable) at any time as well. Adding a book is a two step process of typing in the ISBN number and then agreeing with Google Books’s description of the book or editing it appropriately.</p>
+
+<p>Once there is a pool of users and books, a user can look at another user’s
+  library and request a loan. An email is sent to the book’s owner, and they
+  can decide amongst themselves what the term of the loan would be. The book is
+  subsequently marked “borrowed” and is not available for further loaning. When the book is returned, the owner marks it as returned, and life goes on.</p>
+
+<h2>This sounds like a lot of work…</h2>
+
+<p>It is still less work than chasing down books you can’t remember to whom you lent them. It is still less work than waiting a month (say) for a book to be returned to your university library while the whole time the same book was in your classmate’s personal collection, lying totally unused.</p>
+
+<p>Entering the books by ISBN is probably the second-fastest way to catalog books, and perhaps later versions will incorporate the fast (a barcode reader).</p>
+
+<h2>Jerky McJerkerson hasn’t returned my copy of <em>Discipline and Punish</em>!</h2>
+
+<p>The Internet and social media will not save us. This application relies on the preëxistence of some sort of meatspace social network. It only strives to leverage that preëxisting network to help achieve a discrete task: knowledge acquisition.</p>
+
+<p>If the network has bad nodes (Jerky above), then the network has to deal with that by, say, not lending to him. The software cannot help with that. Sorry. People are often awful. But it’s the times they aren’t that makes this software possible.</p>
+
+<h2>Books are for losers. I want to borrow/lend something else!</h2>
+
+<p>This application is available on <a href="http://github.com/muziejus/little-lending-library">GitHub</a>. This means that you can fork it and create your own library that handles its own objects.</p>
